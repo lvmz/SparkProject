@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="always">
+    <title>
+        发现感兴趣的移动应用
+
+</title>
+    
+
+    <meta name="description" content="豆友为你推荐好应用，亲测评论帮你在百万应用中找到最好的。可以记录用过和想要的移动应用，看看大家都在用哪些类似应用。" />
+
+
+<script>
+    window.Douban=window.Douban||{};var Do=function(){Do.actions.push([].slice.call(arguments))};Do.ready=function(){Do.actions.push([].slice.call(arguments))};Do.add=Do.define=function(a,b){Do.mods[a]=b};Do.global=function(){Do.global.mods=Array.prototype.concat(Do.global.mods,[].slice.call(arguments))};Do.global.mods=[];Do.mods={};Do.actions=[];function set_cookie(g,f,d,e){var b=new Date(),a,c;b.setTime(b.getTime()+((f||30)*24*60*60*1000));a="; expires="+b.toGMTString();for(c in g){document.cookie=c+"="+g[c]+a+"; domain="+(d||"douban.com")+"; path="+(e||"/")}}function get_cookie(b){var e=b+"=",a=document.cookie.split(";"),d,f;for(d=0;d<a.length;d++){f=a[d];while(f.charAt(0)==" "){f=f.substring(1,f.length)}if(f.indexOf(e)===0){return f.substring(e.length,f.length).replace(/\"/g,"")}}return null}Douban.init_show_login=function(a){Do("dialog",function(){var b="/j/misc/login_form";dui.Dialog({title:"登录",url:b,width:/device-mobile/i.test(document.documentElement.className)?document.documentElement.offsetWidth*0.9:350,cache:true,callback:function(c,d){d.node.addClass("dialog-login");d.node.find("h2").css("display","none");d.node.find(".hd h3").replaceWith(d.node.find(".bd h3"));d.node.find("form").css({border:"none",width:"auto",padding:"0"});d.update()}}).open()})};Do(function(){(function(){if("localStorage" in window){return}window.localStorage=function(){var e=document;if(!e.documentElement.addBehavior){throw"don't support localstorage or userdata.";return}var c="_localstorage_ie";var d=e.createElement("input");d.type="hidden";var b=function(f){return function(){e.body.appendChild(d);d.addBehavior("#default#userData");var h=new Date();h.setDate(h.getDate()+365);d.expires=h.toUTCString();d.load(c);var g=f.apply(d,arguments);e.body.removeChild(d);return g}};return{getItem:b(function(f){return this.getAttribute(f)}),setItem:b(function(f,g){this.setAttribute(f,g);this.save(c)}),removeItem:b(function(f){this.removeAttribute(f);this.save(c)}),clear:b(function(){var g=this.XMLDocument.documentElement.attributes;for(var h=0,f;f=g[h];h++){this.removeAttribute(f.name)}this.save(c)})}}()})();$(window).one("load",function(){var b=localStorage.getItem("report");if(!b){return}b=b.split("_moreurl_separator_");var c=function(d){if(d==""){c(b.shift());return}$.get(typeof _MOREURL_REQ=="undefined"?"/stat.html?"+d:_MOREURL_REQ+"?"+d,function(){if(b.length){c(b.shift());localStorage.setItem("report",b.join("_moreurl_separator_"));return}localStorage.removeItem("report")})};c(b.shift())});function a(b,e){var d=["ref="+encodeURIComponent(location.pathname)];for(var c in e){if(e.hasOwnProperty(c)){d.push(c+"="+e[c])}}if(window._SPLITTEST){d.push("splittest="+window._SPLITTEST)}localStorage.setItem("report",(localStorage.getItem("report")||"")+"_moreurl_separator_"+d.join("&"))}window.moreurl=a;$(document).click(function(c){var d=c.target,b=$(d).data("moreurl-dict");if(b){a(d,b)}});$.ajax_withck=function(b){if(b.type=="POST"){b.data=$.extend(b.data||{},{ck:get_cookie("ck")})}return $.ajax(b)};$.postJSON_withck=function(b,c,d){return $.post_withck(b,c,d,"json")};$.post_withck=function(b,d,e,c){if($.isFunction(d)){c=e;e=d;d={}}return $.ajax({type:"POST",url:b,data:$.extend(d,{ck:get_cookie("ck")}),success:e,dataType:c||"text"})};$("html").click(function(d){var b=$(d.target),c=b.attr("class");if(!c){return}$(c.match(/a_(\w+)/gi)).each($.proxy(function(e,g){var f=Douban[g.replace(/^a_/,"init_")];if(typeof f==="function"){d.preventDefault();f.call(this,d)}},b[0]))})});
+    ;(function() {
+        var USER_ID=0;
+window.Ilmen=window.Ilmen||{};var Ilmen=window.Ilmen;Ilmen.ui={};Ilmen.utils={};Ilmen.data={};Ilmen.user={id:USER_ID};Ilmen.requireLogin=function(a){if(!Ilmen.user.id){a.stopImmediatePropagation();Douban.init_show_login()}};
+    })();
+    Do.add('dialog', {path: 'https://img3.doubanio.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js', type: 'js', requires: ['https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css']});
+    Do.global('https://img3.doubanio.com/f/sns/46f67cc48196d6a7047ce83b4917628427c33d1c/js/sns/fp/base.js', 'dialog');
+</script>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/shire/f4f5e1621b4dc2e642d76f400a567bf85657110c/css/core/_init_.css">
+<link rel="stylesheet" href="https://img3.doubanio.com/f/ilmen/5a6a9e5c30481c18e3a171edc64d379097dcf98d/css/ilmen/common.css">
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/1b64dedd608b37c.css">
+
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+<script type="text/javascript">var _body_start = new Date();</script>
+
+    
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=main" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=main" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">和有趣的人做有趣的事</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 3.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="on">
+            <a href="../index.html" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="../location/index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="../group/index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">FM</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://market.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">市集</a>
+            </li>
+          
+            <li>
+              <a href="index.html#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="https://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">一拍一</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-search">
+        <form action="https://www.douban.com/search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">搜索你感兴趣的内容和人...</label>
+            <div class="inp">
+              <input type="hidden" name="source" value="suggest">
+              <input id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off"  value="">
+            </div>
+            <div class="inp-btn"><input type="submit" value="搜索"></div>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="nav-logo">
+        <a href="../index.html">豆瓣社区</a>
+      </div>
+  
+      <div class="nav-items">
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../explore/index.html">浏览发现</a></li>
+          <li>
+              <a href="index.html">移动应用</a>
+              <img src="https://img3.doubanio.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif" alt="new" />
+              
+          </li>
+          <li>
+            <a href="https://www.douban.com/game/explore?dcs=sns-nav&amp;dcm=douban">游戏</a>
+          </li>
+          <li><a href="../online/index.html">线上活动</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+
+<div id="wrapper">
+        
+
+        
+<div id="content">
+    
+    <h1><h1>发现感兴趣的移动应用
+            <span class="th-app-tag">
+                <a href="https://www.douban.com/app?platform=ios" class=on>iOS</a>
+                <a href="https://www.douban.com/app?platform=android">Android</a>
+            </span>
+        </h1></h1>
+
+    <div class="grid-16-8 clearfix">
+        
+        
+        <div class="article">
+               
+
+
+
+
+<div id="th-app-talks" class="mod">
+    <div class="hd">
+        <h2>用户好评</h2>
+        <div class="cate-tab">
+            <a href="https://www.douban.com/app?platform=ios" class=on>全部</a>
+            
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1047">游戏</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1048">生活</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1037">图书</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1043">效率</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1039">娱乐</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1052">音乐</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1042">摄影</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1049">社交</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1044">教育</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1041">工具</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1046">旅行</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1033">参考</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1045">新闻</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1031">健康</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1034">商业</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1050">美食</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1051">财务</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1040">导航</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1030">体育</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1038">天气</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1035">购物</a>
+                <a href="https://www.douban.com/app?platform=ios&amp;cat_id=1032">医疗</a>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="comment-list">
+            
+    
+        
+        <div id="thing_item_20340059" class="common-item" data-id='20340059'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20340059/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s27713933.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20340059/?dcs=index-hot">播放器OPlayer HD － 万能播放器, 老牌...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.4</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        30.00 元
+                </div>
+                    <div class="cont">
+                        <blockquote>自从有了这货 我就能用pad看电影了 外挂字幕和格式问题都解决了<span class="name">- Cailey</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26757196" class="common-item" data-id='26757196'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26757196/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28586921.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26757196/?dcs=index-hot">享居派 - 新房二手房刷墙，装修设计智能...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">8.0</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>哈哈，终于看到他们家的APP了，之前我们家刷墙就是他们家弄的，那之后算是享居派的粉丝了！一次刷墙就俘获了我的心，服务质量很好，果断赞个~<span class="name">- 项少侠真年轻有为</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_25918083" class="common-item" data-id='25918083'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/25918083/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s27700318.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/25918083/?dcs=index-hot">Logeion</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar50"></span>
+                        <span class="rating_nums">9.3</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1033">参考</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>方便好用<span class="name">- 疯狂动物城</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20512864" class="common-item" data-id='20512864'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20512864/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28542056.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20512864/?dcs=index-hot">PicsArt Photo Studio - 一体化照片编辑...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.5</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1042">摄影</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>图层和抠图功能简直强大到没朋友<span class="name">- 不在场</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26749005" class="common-item" data-id='26749005'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26749005/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28532138.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26749005/?dcs=index-hot">沙发旅行 - 年轻人的社交民宿预订平台</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.3</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id="></a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>界面很好看，用起来也很方便。
+发房源接沙发和住沙发都要实名认证；很安全。
+推荐穷游党使用。<span class="name">- Vincent大坏蛋</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_21252567" class="common-item" data-id='21252567'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/21252567/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28652756.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/21252567/?dcs=index-hot">坚果云</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.6</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id="></a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>超级赞，国内做的最良心的同步盘，功能上和Dropbox最接近，增量同步和版本控制做的非常不错，虽然空间不大，但是不像其他云盘那样广告特别多，会一直支持！<span class="name">- 乌龟笑鳖爬</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26136262" class="common-item" data-id='26136262'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26136262/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28502748.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26136262/?dcs=index-hot">探探－超火爆社交App</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar35"></span>
+                        <span class="rating_nums">6.7</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1049">社交</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>探探上看到了前男友，右滑后居然配对了😱<span class="name">- _Vivan</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26581823" class="common-item" data-id='26581823'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26581823/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28500100.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26581823/?dcs=index-hot">Google Spotlight Stories</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.9</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>想想百度还在为流氓软件而努力，简直是悲哀。<span class="name">- 王小支</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26287939" class="common-item" data-id='26287939'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26287939/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28495159.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26287939/?dcs=index-hot">足记—fotoplace像电影一样记录生活·相...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">7.3</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1042">摄影</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>有一天我发了一张自拍，自动推荐的台词骂我是一个废物……（真是太准了！）<span class="name">- 红枣中毒</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26733696" class="common-item" data-id='26733696'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26733696/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28495158.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26733696/?dcs=index-hot">旅拍 · 与独立摄影师一起，以最美的姿...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">8.0</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id="></a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>一款很文艺的App，好喜欢里面的照片。每天早上打开看看，一整天心情都会很好哦<span class="name">- kimmy</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20330598" class="common-item" data-id='20330598'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20330598/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28495157.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20330598/?dcs=index-hot">豆果美食HD</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">7.7</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1050">美食</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>很好 简单实用<span class="name">- 爱电影0921</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20512382" class="common-item" data-id='20512382'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20512382/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s27714533.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20512382/?dcs=index-hot">Pudding Monsters HD (布丁怪兽)</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.6</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        12.00 元
+                </div>
+                    <div class="cont">
+                        <blockquote>超好玩 比之前他家推出的切绳子要好玩 这个不仅仅是得三颗星这么简单 虽然只有三章 但是更挑战的是 他的设定是需要你分别得到 零星 一星 二星 三星 从而得到皇冠才算终结 对于强迫症患者来说 这真的是居家旅行必备 杀时间利器<span class="name">- 落落花开Orz</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20510494" class="common-item" data-id='20510494'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20510494/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s27907888.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20510494/?dcs=index-hot">每日追踪器+ 任务管理器</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">8.1</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id="></a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>特。别。神。用上它之后其他TODO类效率类APP全都废了。<span class="name">- Vee.</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_21279852" class="common-item" data-id='21279852'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/21279852/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28567069.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/21279852/?dcs=index-hot">HelloTalk - 免费找老外，轻松学外语，...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">8.0</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1044">教育</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>友情提示：全世界都是看脸的<span class="name">- Goosegog</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20345176" class="common-item" data-id='20345176'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20345176/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28472052.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20345176/?dcs=index-hot">Dark Meadow: The Pact</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.3</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>刚开始真的简直产生了心理阴影，不敢出阳光房，所以在一楼打进洒满阳光的中央庭院时简直要高兴哭了........于是就这么渐渐沉迷于寂静岭式的压抑感，武器被我一直升级（被重载坑过后换了集中远距攻击和偷魂术的轻型），上了二楼后逛一圈捡宝石和金子，旧楼的设计太完美。 然后用电梯直上17层<span class="name">- Nin</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_25831547" class="common-item" data-id='25831547'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/25831547/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28725039.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/25831547/?dcs=index-hot">疯狂造人-优生备孕怀孕孕期提醒，大姨妈...</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar40"></span>
+                        <span class="rating_nums">7.2</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1031">健康</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>宝妈加QQ315231009<span class="name">- 昌北老狼</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26194832" class="common-item" data-id='26194832'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26194832/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s27699049.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26194832/?dcs=index-hot">大琴师</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar35"></span>
+                        <span class="rating_nums">7.1</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>有心？我怎么看到的是找个噱头急功近利的制作方。音游的根本就是操作模式，非要把两种模式凑一起来“创新”，毫无意义更无诚意。无论下落式还是点触式，至少他们都做到了专一和自我特色，这游戏有什么？几首网红曲+TX盈利模式+如翔一般的操作，甚至不如TX这个渣渣。音游能做成这样也是醉了。<span class="name">- 叽叽叽叽叽叽叽</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26587378" class="common-item" data-id='26587378'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26587378/?dcs=index-hot"><img src="https://img1.doubanio.com/mpic/s28460119.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26587378/?dcs=index-hot">鲤 - 一条小鱼的净化之旅</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar30"></span>
+                        <span class="rating_nums">5.2</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        6.00 元
+                </div>
+                    <div class="cont">
+                        <blockquote>今年媚俗手游之最，抄袭加烂美术加烂操作。操作像是绝对光滑表面的加速运动，这样的游戏居然是十一个人的团队创作（抄袭）的，其中美术居然占了四人？！像极了入门商人搞出来的游戏创作草台班子。<span class="name">- 松山雅</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_26347996" class="common-item" data-id='26347996'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/26347996/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s28030265.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/26347996/?dcs=index-hot">ULTRAFLOW</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.3</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        免费
+                </div>
+                    <div class="cont">
+                        <blockquote>4.7/5
+。由“六名大学生耗时半年”开发的游戏。本来看到图标对此有点不屑一顾的（快点鄙视外貌党吧），但是抱着什么类型的游戏都要试一下的态度下了，结果玩到停不下来，连陪我妈去逛街的路上我都一直在打，我妈在旁边一边开车一边听我在那里噼里啪啦地打也很好奇。那一天我间断性地完了2个小时，撸了62关（=_=），后来是被我妈用买衣服的诱惑使我停下来的。对了，由于有些关卡角度比较奇特，还是用iPad玩比较方便（有些关卡两眼一闭就甩进去了，有一部分关卡究竟怎么过的我也不知道……），所以如果用手机玩大概会挺奔溃的。<span class="name">- RRCC</span></blockquote>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="thing_item_20327923" class="common-item" data-id='20327923'>
+            <div class="pic">
+                <a href="https://www.douban.com/app/20327923/?dcs=index-hot"><img src="https://img3.doubanio.com/mpic/s27674771.jpg" alt="" /></a>
+            </div>
+            <div class="info">
+                <a class="name" href="https://www.douban.com/app/20327923/?dcs=index-hot">时光倒流</a>
+                <div class="info-ft">
+                    <div class="rating">
+                        <span class="allstar45"></span>
+                        <span class="rating_nums">8.9</span>
+                    </div>
+                    <a href="https://www.douban.com/app/ios?cat_id=1044">教育</a>
+                        50.00 元
+                </div>
+                    <div class="cont">
+                        <blockquote>难道我这个果黑要为此买苹果产品？<span class="name">- 傷心龍舞</span></blockquote>
+                    </div>
+            </div>
+        </div>
+
+            <div class="fix-justify"></div>
+        </div>
+            <div class="comment-more">
+                    <a href="index.html#/j/ilmen/app/explore_notes" class="a_more_apps" data-start="20" data-platform="ios" data-cat_id="">显示更多</a>
+
+                
+                <a href="https://www.douban.com/app/ios?cat_id=" class="other_more_apps" style="display:none">好评应用看完啦，看看更多热门应用</a>
+            </div>
+    </div>
+</div>
+
+        </div>
+        <div class="aside">
+                
+    
+    <div id="th-app-cate" class="mod th-app-cate">
+        
+
+
+<div id="thing-side-search" class="sub-mod">
+    <form action="https://www.douban.com/app/search" method="" onsubmit="return $.trim(this.elements['q'].value) !== '';">
+        <label for="thing-side-search-inp">搜 iOS 应用</label>
+        <input id="thing-side-search-inp" name="q" size="50" class="inp" value="">
+        <input type="hidden" name="platform" value="ios">
+        <span class="bn-flat"><input type="submit" value="搜索"></span>
+    </form>
+</div>
+
+
+    </div>
+
+        
+        <div class="mod hot-rank">
+            <div class="mod-tit">
+                <h2>App Store 下载排行</h2>
+                <span class="kind">
+                  <a href="index.html#" class="on free">免费</a>
+                  <a href="index.html#" class="pay">付费</a>
+                </span>
+            </div>
+            
+    <div class="th-app-pop list-cont">
+        
+    <ul>
+                <li class="common-item on">
+                    <span class="num">1</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/25859828/?dcs=index-ranklist">天天P图-最好用的美妆神器</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar40"></span>
+                                <span class="rating_nums">7.7</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1042">摄影</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/25859828/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s27745914.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">2</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/20329090/?dcs=index-ranklist">QQ</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar40"></span>
+                                <span class="rating_nums">7.4</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1049">社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/20329090/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28769367.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">3</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/10751360/?dcs=index-ranklist">微信</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1049">社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/10751360/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28401170.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">4</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/11446437/?dcs=index-ranklist">支付宝（zhifubao）-口碑 生活 理财 钱包</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.8</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1051">财务</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/11446437/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28502712.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">5</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26702013/?dcs=index-ranklist">映客－BIGBANG官方独家直播！独家专访&amp;...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar35"></span>
+                                <span class="rating_nums">6.4</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1049">社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/26702013/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28586594.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">6</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/20510629/?dcs=index-ranklist">淘宝 - 随时随地，想淘就淘</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar40"></span>
+                                <span class="rating_nums">7.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1035">购物</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/20510629/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28606814.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">7</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/11454135/?dcs=index-ranklist">优酷视频-极限挑战2、仙剑云之凡、喜剧...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar35"></span>
+                                <span class="rating_nums">7.1</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/11454135/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28722169.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">8</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/20330060/?dcs=index-ranklist">美团团购-团购，电影，美食，酒店，外卖...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar40"></span>
+                                <span class="rating_nums">7.5</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/20330060/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28776577.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">9</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26737774/?dcs=index-ranklist">蜜芽</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/26737774/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28474538.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">10</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/25696391/?dcs=index-ranklist">芒果TV-湖南卫视节目视频点播</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar30"></span>
+                                <span class="rating_nums">5.8</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1048">生活</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/25696391/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s27678155.jpg" width="48"></a>
+                </li>
+    </ul>
+
+            
+    <ul style="display:none">
+                <li class="common-item on">
+                    <span class="num">1</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26789655/?dcs=index-ranklist">诛神黄昏-自由交易-杀人爆装开放式战斗</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26789655/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28717956.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">2</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26757934/?dcs=index-ranklist">葫芦娃(正版授权)－怀旧、致敬经典动画...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar20"></span>
+                                <span class="rating_nums">4.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26757934/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28620956.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">3</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26656077/?dcs=index-ranklist">格斗学院-开启全民电竞时代</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar50"></span>
+                                <span class="rating_nums">10.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">免费</span>
+                    <a class="pic" href="https://www.douban.com/app/26656077/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28677280.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">4</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26680151/?dcs=index-ranklist">三国龙翔传-激战与谋略 打造真正的三国</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26680151/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28356535.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">5</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26807235/?dcs=index-ranklist">家庭教师Reborn-动漫官方原版来袭，十年...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26807235/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28772874.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">6</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26803190/?dcs=index-ranklist">大圣驾到</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26803190/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28756519.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">7</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26786951/?dcs=index-ranklist">渡劫修仙</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26786951/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28693618.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">8</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26806146/?dcs=index-ranklist">媚倾天下-三千佳丽与你同战</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26806146/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28768286.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">9</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26804532/?dcs=index-ranklist">大航海时代(简体中文版)</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar00"></span>
+                                <span class="rating_nums">0.0</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">1.00 元</span>
+                    <a class="pic" href="https://www.douban.com/app/26804532/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28762898.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">10</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26678106/?dcs=index-ranklist">仙剑五前传-正版授权:蜀山秘境上线 全民...</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar35"></span>
+                                <span class="rating_nums">6.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/ios?cat_id=1047">游戏</a>
+                        </div>
+                    </div>
+                        <span class="price">免费</span>
+                    <a class="pic" href="https://www.douban.com/app/26678106/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28643197.jpg" width="48"></a>
+                </li>
+    </ul>
+
+    </div>
+
+        </div>
+    
+        
+        <div class="mod th-app-cate">
+            <div class="mod-tit">
+                <h2>编辑推荐 Android 应用</h2>
+            </div>
+            
+    <div class="th-app-pop list-cont">
+        
+    <ul>
+                <li class="common-item on">
+                    <span class="num">1</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/26397853/?dcs=index-ranklist">纪念碑谷 完整版</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar50"></span>
+                                <span class="rating_nums">9.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1087">游戏</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/26397853/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28080464.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">2</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/22611198/?dcs=index-ranklist">支付宝</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1086">金融理财</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/22611198/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28542002.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">3</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/24529390/?dcs=index-ranklist">知乎</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1080">通讯社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/24529390/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28586695.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">4</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/21769661/?dcs=index-ranklist">网易云音乐</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">9.2</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1065">影音</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/21769661/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28399531.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">5</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/25954389/?dcs=index-ranklist">豆瓣</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar40"></span>
+                                <span class="rating_nums">7.6</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1080">通讯社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/25954389/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s28386180.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">6</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/21768970/?dcs=index-ranklist">豆瓣FM</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.3</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1065">影音</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/21768970/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s28669649.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">7</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/21908239/?dcs=index-ranklist">百度贴吧</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar35"></span>
+                                <span class="rating_nums">6.9</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1080">通讯社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/21908239/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s27164398.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">8</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/21908261/?dcs=index-ranklist">Tumblr</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.7</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=0"></a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/21908261/?dcs=index-ranklist"><img src="https://img3.doubanio.com/spic/s27148460.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">9</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/11446987/?dcs=index-ranklist">Twitter</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.3</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1080">通讯社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/11446987/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s27151068.jpg" width="48"></a>
+                </li>
+                <li class="common-item">
+                    <span class="num">10</span>
+                    <div class="info">
+                        <a class="title" href="https://www.douban.com/app/11450010/?dcs=index-ranklist">微信</a>
+                        <div class="intro">
+                            <div class="rating">
+                                <span class="allstar45"></span>
+                                <span class="rating_nums">8.2</span>
+                            </div>
+                            <a href="https://www.douban.com/app/android?cat_id=1080">通讯社交</a>
+                        </div>
+                    </div>
+                    <a class="pic" href="https://www.douban.com/app/11450010/?dcs=index-ranklist"><img src="https://img1.doubanio.com/spic/s27457929.jpg" width="48"></a>
+                </li>
+    </ul>
+
+    </div>
+
+        </div>
+    
+
+    
+    
+    <div class="app-qrcode">
+        <a href='https://www.douban.com/doubanapp/frodo' title="豆瓣App" target="_blank"><img width="300" height="112" alt="扫描二维码下载" src="https://img3.doubanio.com/f/ilmen/7e5dc66074a5cbf30cec397fe171b2bd18ffa55f/pics/ilmen/app_qrcode.png"></a>
+    </div>
+
+        </div>
+        <div class="extra">
+            
+        </div>
+    </div>
+</div>
+
+        
+<div id="footer">
+    
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=main" target="_blank">帮助中心</a>
+    · <a href="../doubanapp/index.html">移动应用</a>
+    · <a href="../partner/index.html">豆瓣广告</a>
+</span>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="https://img3.doubanio.com/f/shire/e9d9543ebc06f2964039a2e94898f84ce77fc070/js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="https://img3.doubanio.com/f/shire/14a5bb57277dd7ea5f19b8617cf7dcd82dd70a16/js/core/do/_init_.js"></script>
+
+<script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/2937c45bd1cb3e58.js"></script>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+
+
+<!-- dis17-docker-->
+
+  <script>_SPLITTEST=''</script>
+</body>
+
+</html>
+

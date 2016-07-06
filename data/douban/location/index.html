@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="always">
+    <title>豆瓣同城_北京</title>
+    
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  <meta chartset="utf-8">
+  
+    <meta id="meta-viewport" name="viewport" content="width=980">
+
+  
+    <meta name="keywords" content="活动网站, 同城活动, 活动发布, 活动搜索, 音乐, 演出, 电影, 话剧, 公益, 讲座, 沙龙, 展览, 聚会, 旅行, 交友">
+    <meta name="description" content="提供北京本地所有音乐、戏剧、讲座、聚会、旅行等线下活动的资讯，并能根据你的口味推荐好活动给你，帮助你结识志同道合的人">
+
+  <script >var _head_start = new Date();</script>
+
+
+  <link href="https://img3.doubanio.com/f/shire/bdb62d45fb145651da30ac3fec98f21c40cfc962/css/douban.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+  
+      
+  </style>
+
+  <script src="https://img3.doubanio.com/f/loc/e9d9543ebc06f2964039a2e94898f84ce77fc070/js/loc/component/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/71ac0453da20ef0d46981120323c692ebfc729b5/js/douban.js"></script>
+  <script type="text/javascript" src="https://img3.doubanio.com/f/shire/29449d396dacb28fd9949c709ccf02a46b910156/js/do.js" data-cfg-autoload="false"></script>
+  <script type="text/javascript">
+    Do.add('dialog', {path: 'https://img3.doubanio.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js', type: 'js', requires: ['https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css']});
+    Do(function() {
+      $.viewport_size=function(){var a=[0,0];if(typeof window.innerWidth!="undefined"){a=[window.innerWidth,window.innerHeight]}else{if(typeof document.documentElement!="undefined"&&typeof document.documentElement.clientWidth!="undefined"&&document.documentElement.clientWidth!=0){a=[document.documentElement.clientWidth,document.documentElement.clientHeight]}else{a=[document.body.clientWidth,document.body.clientHeight]}}return a};Douban.init_collect_btn=function(a){$(a).click(function(g){g.preventDefault();if($("#hiddendialog").length){show_dialog($("#hiddendialog").html());load_event_monitor($("#dialog"));return}show_dialog(null);var d=$(this).attr("name").split("-"),h=d[0],b=d[1],i=d[2],f=d[3],c="/j/location/drama/"+b+"/interest?"+(i?"interest="+i:"")+(f?"&rating="+f:"")+(h=="cbtn"?"&cmt=1":"");$.getJSON(c,function(e){if(!$("#dialog").length){return}var l=$("<div></div>");l.get(0).innerHTML=e.html;var s=e.tags;var o=s.join(" ");$("input[name=tags]",l).val((o.length>1)?o+" ":o);var k={};$.each(s,function(t,r){k[r.toLowerCase()]=true});populate_tag_btns("我的标签:",$("#mytags",l),e.my_tags,k);populate_tag_btns("常用标签:",$("#populartags",l),e.popular_tags,k);if(h=="pbtn"||h=="cbtn"){$("form",l).data("reload",1)}$("#dialog").html(l);$("#showtags").click(function(){if($("#advtags").is(":hidden")){$(this).html("缩起 ▲");$("#advtags").show();$("#foldcollect").val("U")}else{$(this).html($(this).attr("rel"));$("#advtags").hide();$("#foldcollect").val("F")}$(this).blur();refine_dialog()});var j=$("input[name=interest]",l),p=$(".rate_stars"),n=function(){if(j[0].checked){p.hide()}else{p.show()}refine_dialog()};j.click(n);n();if($("#left_n").length){var m=$("#left_n").text();llen=(m.match(/\d+/i)==m)?m:140}if(h=="cbtn"){var q=$("h2","#dialog");q.text(q.text().replace("修改","写短评"));if(!j[0].checked&&j[1]){j[1].checked=true}$("form","#dialog").data("comment",1)}load_event_monitor(l);$.fn.movieDisplayLimit=function(t,w,r){function u(y,z,x){z.text(x-Math.ceil(y.val().replace(/[^\x00-\xff]/g,"**").length/2))}function v(z){var A=z.val().match(/[^\x00-\xff]/ig),x=!A?0:A.length,y=z.val().length-x;t.attr("maxlength",140+Math.ceil(y/2))}u(t,w,r);$(this).keyup(function(){u($(this),w,r);v($(this));return false})};if($("div#dialog form.drama-sns").length){$("textarea#comment").unbind().movieDisplayLimit($("textarea#comment"),$("span#left_n"),140)}});return false})};
+    });
+  </script>
+  
+<link rel="stylesheet" href="https://img3.doubanio.com/f/loc/cc0d305a084af78973a0d1bb5a054e6121ab990c/css/loc/base.css">
+
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/707914a21ea4e6ee.css">
+  <script></script>
+
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+  <script type="text/javascript">var _body_start = new Date();</script>
+  
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=location" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=location" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">和有趣的人做有趣的事</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 3.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="">
+            <a href="../index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li class="on">
+            <a href="index.html" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="../group/index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">FM</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://market.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">市集</a>
+            </li>
+          
+            <li>
+              <a href="index.html#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="https://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">一拍一</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+<div id="db-nav-location" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-search">
+      <form id="nav-search-form" action="https://www.douban.com/event/search" method="get">
+          
+          <div class="inp">
+            <label for="inp-query">活动名称、地点、介绍、舞台剧</label>
+            <input class="inp-text" id="inp-query" name="search_text" size="22" value="">
+            <input class="inp-btn" type="submit" value="搜索">
+          </div>
+            <input type="hidden" name="loc" value="beijing">
+      </form>
+    </div>
+    <div class="nav-logo">
+      <a title="豆瓣同城-北京" href="index.html">豆瓣同城-北京</a>
+    </div>
+    <div class="local-label">
+      <a href="index.html" class="label">北京<i></i></a>
+    </div>
+    
+  
+  <div class="nav-items nav-anon">
+      <ul>
+        
+  
+    
+    <li>
+        <a
+        href="https://beijing.douban.com/events">同城活动</a>
+    </li>
+    
+    <li>
+        <a
+        href="https://beijing.douban.com/hosts">主办方</a>
+    </li>
+    
+    <li>
+        <a
+        href="drama/index.html">舞台剧</a>
+    </li>
+
+      
+      </ul>
+  </div>
+ 
+  </div>
+  </div>
+</div>
+<div id="db-nav-location-list" class="nav-local-list">
+<ul>
+    <li><a href="https://www.douban.com/location/beijing/">北京</a></li>
+    <li><a href="https://www.douban.com/location/shanghai/">上海</a></li>
+    <li><a href="https://www.douban.com/location/guangzhou/">广州</a></li>
+    <li><a href="https://www.douban.com/location/wuhan/">武汉</a></li>
+    <li><a href="https://www.douban.com/location/chengdu/">成都</a></li>
+    <li><a href="https://www.douban.com/location/shenzhen/">深圳</a></li>
+    <li><a href="https://www.douban.com/location/hangzhou/">杭州</a></li>
+    <li><a href="https://www.douban.com/location/xian/">西安</a></li>
+    <li><a href="https://www.douban.com/location/nanjing/">南京</a></li>
+    <li><a href="https://www.douban.com/location/zhengzhou/">郑州</a></li>
+    <li><a href="https://www.douban.com/location/changsha/">长沙</a></li>
+    <li><a href="https://www.douban.com/location/wenzhou/">温州</a></li>
+    <li><a href="https://www.douban.com/location/fuzhou/">福州</a></li>
+    <li><a href="https://www.douban.com/location/shenyang/">沈阳</a></li>
+    <li><a href="https://www.douban.com/location/world/">更多城市</a></li>
+</ul>
+</div>
+
+
+
+
+
+  
+
+  <div id="wrapper" class="fwrap">
+      
+<div id="content">
+    
+    <div class="grid-free clearfix">
+        
+        
+        <div class="article">
+               
+  
+
+
+
+
+<div id="db-events-guess" class="mod ui-slides">
+  <div class="hd">
+    <h2>热门活动</h2>
+      
+  <div class="ui-slide-control">
+    <span class="ui-slide-counter pl"></span>
+    <a class="btn-prev" href="javascript:void(0)"></a>
+    <a class="btn-next" href="javascript:void(0)"></a>
+  </div>
+  
+
+  </div>
+  <div class="bd ui-slide-screen">
+    <ul class="ui-slide-contents gallery gallery-pic110">
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26705591/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/b729e8fea6c0162.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26705591/" title="【豆瓣9.2分】2016 北京央华 赖声川作品演出季之 《宝岛一村》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">【豆瓣9.2分】2016 北京央华 ...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26684928/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/ce72709d27d0fd3.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26684928/" title="【北京】《印象莫奈：时光映迹艺术展》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">【北京】《印象莫奈：时光映迹...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26490817/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/ecc39e7b2c5bd52.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26490817/" title="【豆瓣8.6分】百老汇经典原版音乐剧《窈窕淑女》My Fair Lady-北京站" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">【豆瓣8.6分】百老汇经典原版...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26320876/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/7b053e661ef51b0.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26320876/" title="“皇家焰火”唐·库普曼与阿姆斯特丹巴洛克交响乐团音乐会" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">“皇家焰火”唐·库普曼与阿姆...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26718312/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/27ceaf70cc2039d.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26718312/" title="加拿大新马戏时尚秀《大都会 Cirkopolis》加拿大炫光马戏工场" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">加拿大新马戏时尚秀《大都会 C...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26587944/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/6cc4b085fef5b51.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26587944/" title="【北京】风的记忆--熊木杏里夏日初见巡回演唱会" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">【北京】风的记忆--熊木杏里夏...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26664755/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/6df63adc9e365ff.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26664755/" title="2016国家大剧院国际戏剧季：国家大剧院原创话剧《样式雷》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">2016国家大剧院国际戏剧季：国...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26789017/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/167f40d282c8574.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26789017/" title="大道文化出品——陈佩斯导演经典结构喜剧《阳台》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">大道文化出品——陈佩斯导演经...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26834268/"><img alt=""
+                src="https://img1.doubanio.com/view/event_poster/large/public/37cf61ca8be642b.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26834268/" title="2016国家大剧院国际戏剧季／柏林戏剧节单元：德国柏林德意志剧院与鲁尔雷克林豪森节日剧院制作话剧《等待戈多》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">2016国家大剧院国际戏剧季／柏...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26810286/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/a451788cfcb26dd.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26810286/" title="话剧：《樱桃园》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">话剧：《樱桃园》</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26774296/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/1e93295fa7592f3.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26774296/" title=" 【豆瓣9.2分】 百老汇最令人血脉偾张的票房冠军《STOMP·破铜烂铁》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})"> 【豆瓣9.2分】 百老汇最令人...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26684422/"><img alt=""
+                src="https://img1.doubanio.com/view/event_poster/large/public/9e5558e5c5457ab.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26684422/" title="话剧：《人民公敌》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">话剧：《人民公敌》</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26834163/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/f73bd30728efa1d.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26834163/" title="2016国家大剧院国际戏剧季／柏林戏剧节单元：汉堡德意志话剧院《约翰·盖勃吕尔·博克曼》" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">2016国家大剧院国际戏剧季／柏...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26819205/"><img alt=""
+                src="https://img3.doubanio.com/view/event_poster/large/public/5365865fd016f0d.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26819205/" title="国际邀请：法国当代著名导演帕斯卡尔·朗贝尔作品《爱的落幕》法文版" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">国际邀请：法国当代著名导演帕...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26685279/"><img alt=""
+                src="https://img1.doubanio.com/view/event_poster/large/public/8f4da1c0022e2aa.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26685279/" title="【天桥●缤纷夏日艺术节】岩井俊二和他的乐队—Hec&amp;Pascal音乐会" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">【天桥●缤纷夏日艺术节】岩井...</a>
+          </div>
+        </li>
+      <li>
+
+          <div class="pic on-sale">
+            <a tabindex="-1" onclick="moreurl(this, {from:'loc-index-guess-beijing'})" href="https://www.douban.com/event/26523364/"><img alt=""
+                src="https://img1.doubanio.com/view/event_poster/large/public/a0fc5ce1eb3fa5b.jpg" width="110" height="165"></a>
+          </div>
+          <div class="title">
+              <a href="https://www.douban.com/event/26523364/" title="《李雷和韩梅梅》六周年纪念版" onclick="moreurl(this, {from:'loc-index-guess-beijing'})">《李雷和韩梅梅》六周年纪念版</a>
+          </div>
+        </li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <div class="hidden-lg hidden-md visible-sm action-buttons">
+    
+  <div class="mod">
+         
+<a class="bn-big-action" rel="nofollow" href="https://www.douban.com/event/create?loc=beijing">
+  ＋发起同城活动     
+</a>     
+
+
+
+
+  </div>
+
+  </div>
+  
+
+<div class="mod cats-board inline-list">
+  <ul class="crow">
+      
+      <li class="col">
+        <h5>
+          <a href="https://beijing.douban.com/events/week-music">音乐&raquo;</a>
+        </h5>
+        <ul>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1001">小型现场</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1002">音乐会</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1003">演唱会</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1004">音乐节</a>
+            </li>
+        </ul>
+      </li>
+      
+      <li class="col">
+        <h5>
+          <a href="https://beijing.douban.com/events/week-drama">戏剧&raquo;</a>
+        </h5>
+        <ul>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1101">话剧</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1102">音乐剧</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1103">舞剧</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1104">歌剧</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1105">戏曲</a>
+            </li>
+        </ul>
+      </li>
+      
+      <li class="col">
+        <h5>
+          <a href="https://beijing.douban.com/events/week-party">聚会&raquo;</a>
+        </h5>
+        <ul>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1401">生活</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1403">摄影</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1404">外语</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1405">桌游</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1407">交友</a>
+            </li>
+                        
+            <li>
+            <a href="https://beijing.douban.com/events/week-1402">集市</a>
+            </li>
+        </ul>
+      </li>
+      
+      <li class="col">
+        <h5>
+          <a href="https://beijing.douban.com/events/week-film">电影&raquo;</a>
+        </h5>
+        <ul>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1801">主题放映</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1802">影展</a>
+            </li>
+            
+            <li>
+            <a href="https://beijing.douban.com/events/week-1803">影院活动</a>
+            </li>
+        </ul>
+      </li>
+    <li class="col">
+      <h5>
+        <a href="https://beijing.douban.com/events/week-all">
+        其他&raquo;
+        </a>
+      </h5>
+        <ul>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-salon">讲座</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-exhibition">展览</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-sports">运动</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-travel">旅行</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-commonweal">公益</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-competition">赛事</a>
+          </li>
+          
+          <li>
+            <a href="https://beijing.douban.com/events/week-course">课程</a>
+          </li>
+        </ul>
+    </li>
+  </ul>
+</div>
+
+
+  <div id="dale_location_beijing_home_left_middle"></div>
+
+  <div id="picked-events">
+    
+
+
+
+
+
+
+
+
+  
+  
+  <div class="mod event-mod">
+    <div class="hd">
+      <h2>
+        <span class="title">
+        音乐
+        </span>
+      </h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/events/week-music">更多》</a>
+      </span>
+        <div class="tabs">
+            <a class="on" href="https://beijing.douban.com/events/week-music">
+              <span>最热</span>
+            </a>
+              <a href="https://beijing.douban.com/events/week-1001" data-i="0">
+                <span>小型现场</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1002" data-i="1">
+                <span>音乐会</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1003" data-i="2">
+                <span>演唱会</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1004" data-i="3">
+                <span>音乐节</span>
+              </a>
+        </div>
+    </div>
+    <div class="bd">
+      
+  
+
+
+
+
+
+  
+  
+
+  <ul class="events-list events-list-2col events-list-pic70">
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26587944/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/6cc4b085fef5b51.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26587944/" title="【北京】风的记忆--熊木杏里夏日初见巡回演唱会">
+            【北京】风的记忆--熊木杏里夏日初见巡回演唱会
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">5日 周日</span>&nbsp;<span class="time">19:30 - 21:00</span>
+
+        </div>
+        <address title="北京 朝阳区 世纪剧院">
+          世纪剧院
+        </address>
+        <div>
+          312人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26698463/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/408ad7ddc75326e.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26698463/" title="蜗牛的家五周年•蜗牛音乐节">
+            蜗牛的家五周年•蜗牛音乐节
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">25日 周六</span>&nbsp;<span class="time">15:00 - 23:00</span>
+
+        </div>
+        <address title="北京 东城区 安定门 北京 东城区 北京市东城区和平里西街79号糖果三层">
+          北京 东城区 北京市东城区...
+        </address>
+        <div>
+          278人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26685279/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/8f4da1c0022e2aa.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26685279/" title="【天桥●缤纷夏日艺术节】岩井俊二和他的乐队—Hec&amp;Pascal音乐会">
+            【天桥●缤纷夏日艺术节】岩井俊二和他的乐队—Hec&amp;Pa...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">7月</span><span class="day">2日 周六</span>&nbsp;<span class="time">19:30 - 21:30</span>
+
+        </div>
+        <address title="北京 北京市东城区天桥南大街9号楼天桥艺术中心">
+          北京市东城区天桥南大街9号...
+        </address>
+        <div>
+          82人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26320947/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/cb9029938b05441.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26320947/" title="“纽约探戈”手风琴大师理查·加利安诺与日内瓦室内乐团音乐会">
+            “纽约探戈”手风琴大师理查·加利安诺与日内瓦室内乐...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">15日 周三</span>&nbsp;<span class="time">00:00 - 00:00</span>
+
+        </div>
+        <address title="北京 北京市西城区西长安街2号(人民大会堂西侧)">
+          北京市西城区西长安街2号(...
+        </address>
+        <div>
+          36人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26284657/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/ac6d83fb3609718.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26284657/" title="当“无厘头”遇上“古典乐”——古典怪咖创意魔幻音乐会">
+            当“无厘头”遇上“古典乐”——古典怪咖创意魔幻音乐会
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">3日 周五</span>&nbsp;<span class="time">19:30 - 21:30</span>
+
+        </div>
+        <address title="北京 北新华街1号 ">
+          北新华街1号 
+        </address>
+        <div>
+          26人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26654865/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/1e7b38644e83286.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26654865/" title="2016国际钢琴系列：肖邦传奇·李云迪钢琴独奏音乐会">
+            2016国际钢琴系列：肖邦传奇·李云迪钢琴独奏音乐会
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">7月</span><span class="day">13日 周三</span>&nbsp;<span class="time">19:30 - 21:30</span>
+
+        </div>
+        <address title="北京 北京市西城区西长安街2号(人民大会堂西侧)">
+          北京市西城区西长安街2号(...
+        </address>
+        <div>
+          11人关注
+        </div>
+      </div>
+      </li>
+  </ul>
+
+
+
+
+
+    </div>
+  </div>
+
+  
+  
+  <div class="mod event-mod">
+    <div class="hd">
+      <h2>
+        <span class="title">
+        戏剧
+        </span>
+      </h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/events/week-drama">更多》</a>
+      </span>
+        <div class="tabs">
+            <a class="on" href="https://beijing.douban.com/events/week-drama">
+              <span>最热</span>
+            </a>
+              <a href="https://beijing.douban.com/events/week-1101" data-i="0">
+                <span>话剧</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1102" data-i="1">
+                <span>音乐剧</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1103" data-i="2">
+                <span>舞剧</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1104" data-i="3">
+                <span>歌剧</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1105" data-i="4">
+                <span>戏曲</span>
+              </a>
+        </div>
+    </div>
+    <div class="bd">
+      
+  
+
+
+
+
+
+  
+  
+
+  <ul class="events-list events-list-2col events-list-pic70">
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26684422/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/9e5558e5c5457ab.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26684422/" title="话剧：《人民公敌》">
+            话剧：《人民公敌》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">19日</span> 至 <span class="month">6月</span><span class="day">5日</span>
+
+        </div>
+        <address title="北京 东城区 王府井/东单 首都剧场">
+          首都剧场
+        </address>
+        <div>
+          202人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26219518/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/03429a54bc75976.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26219518/" title="【北京站】中国首部浸没式戏剧 孟京辉《死水边的美人鱼》">
+            【北京站】中国首部浸没式戏剧 孟京辉《死水边的美人鱼》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">6月</span><span class="day">14日</span> 至 <span class="month">7月</span><span class="day">3日</span>
+
+        </div>
+        <address title="北京 东城区 东直门 东直门外大街十字坡西里甲3号3楼(近东二环)">
+          东直门外大街十字坡西里甲3...
+        </address>
+        <div>
+          353人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26737127/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/f784b56ea322061.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26737127/" title=" 【豆瓣8.6分】精品喜剧展演：黑色喜剧《驴得水》">
+             【豆瓣8.6分】精品喜剧展演：黑色喜剧《驴得水》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">6月</span><span class="day">29日</span> 至 <span class="month">7月</span><span class="day">3日</span>
+
+        </div>
+        <address title="北京 东城区 北京喜剧院 北京市东城区朝阳门北大街11号">
+          北京喜剧院 北京市东城区朝...
+        </address>
+        <div>
+          87人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26774296/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/1e93295fa7592f3.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26774296/" title=" 【豆瓣9.2分】 百老汇最令人血脉偾张的票房冠军《STOMP·破铜烂铁》">
+             【豆瓣9.2分】 百老汇最令人血脉偾张的票房冠军《STO...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">6月</span><span class="day">29日</span> 至 <span class="month">7月</span><span class="day">17日</span>
+
+        </div>
+        <address title="北京 西城区 新街口 解放军歌剧院（北京市西城区德胜门西大街60）">
+          解放军歌剧院（北京市西城...
+        </address>
+        <div>
+          93人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26640934/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/d725b82f8e1743a.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26640934/" title="燃烧的疯人院">
+            燃烧的疯人院
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">6月</span><span class="day">10日</span> 至 <span class="month">6月</span><span class="day">11日</span>
+
+        </div>
+        <address title="北京 海淀区 中国人民大学如论讲堂">
+          中国人民大学如论讲堂
+        </address>
+        <div>
+          59人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26671145/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/6ec58e2075ddc5a.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26671145/" title="永远行走的莎士比亚”演出季  舞台剧《爱在无爱城》">
+            永远行走的莎士比亚”演出季  舞台剧《爱在无爱城》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">12日</span> 至 <span class="month">6月</span><span class="day">12日</span>
+
+        </div>
+        <address title="北京 抄手胡同64号">
+          抄手胡同64号
+        </address>
+        <div>
+          58人关注
+        </div>
+      </div>
+      </li>
+  </ul>
+
+
+
+
+
+    </div>
+  </div>
+
+  
+  
+  <div class="mod event-mod">
+    <div class="hd">
+      <h2>
+        <span class="title">
+        聚会
+        </span>
+      </h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/events/week-party">更多》</a>
+      </span>
+        <div class="tabs">
+            <a class="on" href="https://beijing.douban.com/events/week-party">
+              <span>最热</span>
+            </a>
+              <a href="https://beijing.douban.com/events/week-1401" data-i="0">
+                <span>生活</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1403" data-i="1">
+                <span>摄影</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1404" data-i="2">
+                <span>外语</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1405" data-i="3">
+                <span>桌游</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1407" data-i="4">
+                <span>交友</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1406" data-i="5">
+                <span>夜店</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1402" data-i="6">
+                <span>集市</span>
+              </a>
+        </div>
+    </div>
+    <div class="bd">
+      
+  
+
+
+
+
+
+  
+  
+
+  <ul class="events-list events-list-2col events-list-pic70">
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26844455/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/489ea81f3de3fa9.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26844455/" title="English：不再说不想，开始说I Can">
+            English：不再说不想，开始说I Can
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">26日</span> 至 <span class="month">6月</span><span class="day">14日</span>
+
+        </div>
+        <address title="北京 东城区崇文门新世界中心A座">
+          东城区崇文门新世界中心A座
+        </address>
+        <div>
+          13人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26764111/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/73812b9239aa9d2.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26764111/" title="一起来搜寻国宝吧！">
+            一起来搜寻国宝吧！
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">13日</span> 至 <span class="month">6月</span><span class="day">30日</span>
+
+        </div>
+        <address title="北京 东城区 前门 国家博物馆">
+          国家博物馆
+        </address>
+        <div>
+          107人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26340889/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/fa7b0f9674dd8c3.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26340889/" title="独立书店店长一日体验——【书岛】老北京胡同里的四合院图书馆">
+            独立书店店长一日体验——【书岛】老北京胡同里的四合...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">29日</span> 至 <span class="month">8月</span><span class="day">20日</span>
+
+        </div>
+        <address title="北京 西城区 阜成门 宫门口头条一号【书岛】">
+          宫门口头条一号【书岛】
+        </address>
+        <div>
+          966人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26791994/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/267f32e1d504e61.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26791994/" title="真人RPG游戏之泰坦陨落·阵营荣耀">
+            真人RPG游戏之泰坦陨落·阵营荣耀
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">19日</span> 至 <span class="month">6月</span><span class="day">30日</span>
+
+        </div>
+        <address title="北京 朝阳区 蓝色港湾">
+          蓝色港湾
+        </address>
+        <div>
+          11人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26694461/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/e791e25c191a3e0.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26694461/" title="日本小原流花道体验课">
+            日本小原流花道体验课
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">7日</span> 至 <span class="month">6月</span><span class="day">4日</span>
+
+        </div>
+        <address title="北京 北京市朝阳区望京西路中广宜景湾如熙堂">
+          北京市朝阳区望京西路中广...
+        </address>
+        <div>
+          21人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26813928/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/12b2ea30a90344c.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26813928/" title="一杯咖啡换你一个故事">
+            一杯咖啡换你一个故事
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">22日</span> 至 <span class="month">6月</span><span class="day">30日</span>
+
+        </div>
+        <address title="北京 朝阳区 望京 望京">
+          望京
+        </address>
+        <div>
+          21人关注
+        </div>
+      </div>
+      </li>
+  </ul>
+
+
+
+
+
+    </div>
+  </div>
+
+    <!-- douban ad begin -->
+    <div id="dale_location_beijing_home_left_bottom"></div>
+    <!-- douban ad end -->
+  
+  
+  <div class="mod event-mod">
+    <div class="hd">
+      <h2>
+        <span class="title">
+        电影
+        </span>
+      </h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/events/week-film">更多》</a>
+      </span>
+        <div class="tabs">
+            <a class="on" href="https://beijing.douban.com/events/week-film">
+              <span>最热</span>
+            </a>
+              <a href="https://beijing.douban.com/events/week-1801" data-i="0">
+                <span>主题放映</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1802" data-i="1">
+                <span>影展</span>
+              </a>
+              <a href="https://beijing.douban.com/events/week-1803" data-i="2">
+                <span>影院活动</span>
+              </a>
+        </div>
+    </div>
+    <div class="bd">
+      
+  
+
+
+
+
+
+  
+  
+
+  <ul class="events-list events-list-2col events-list-pic70">
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26879009/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/bf945e35b6cec20.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26879009/" title="【叁号电影院】6月5日总第323期 放映《帝国陷落》">
+            【叁号电影院】6月5日总第323期 放映《帝国陷落》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">5日 周日</span>&nbsp;<span class="time">19:00 - 21:30</span>
+
+        </div>
+        <address title="北京 东城区 藏经馆胡同11号77文创梦想+   四层影院">
+          藏经馆胡同11号77文创梦想+...
+        </address>
+        <div>
+          1人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26800884/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/333e1a40599cd66.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26800884/" title=" 布雷拉6月主题放映【弗朗索瓦•欧容】导演电影系列">
+             布雷拉6月主题放映【弗朗索瓦•欧容】导演电影系列
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">18日</span> 至 <span class="month">6月</span><span class="day">30日</span>
+
+        </div>
+        <address title="北京 朝阳区 朝阳其它 华纺易城17号楼07号底商">
+          华纺易城17号楼07号底商
+        </address>
+        <div>
+          13人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26874356/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/0318079d047ddf7.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26874356/" title="新生代悬疑港片的声音线索《踏血寻梅电影原声带》">
+            新生代悬疑港片的声音线索《踏血寻梅电影原声带》
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">5日 周日</span>&nbsp;<span class="time">14:00 - 16:00</span>
+
+        </div>
+        <address title="北京 朝阳区 朝阳大悦城五层悦界">
+          朝阳大悦城五层悦界
+        </address>
+        <div>
+          12人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26675624/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/202200d64082167.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26675624/" title="lelebar主题电影第24季 ----- 那些闪闪发光的少年">
+            lelebar主题电影第24季 ----- 那些闪闪发光的少年
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">7日</span> 至 <span class="month">6月</span><span class="day">30日</span>
+
+        </div>
+        <address title="北京 朝阳区 朝阳其它 定福庄朝阳路路北，广院北门定福庄快速公交往东50米，二外北门麦当劳往西100米，二楼，lelebar乐乐吧">
+          定福庄朝阳路路北，广院北...
+        </address>
+        <div>
+          24人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26858889/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/e686a81a1b7fcc0.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26858889/" title="吉姆·贾木许 【作品集】 专题放映">
+            吉姆·贾木许 【作品集】 专题放映
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">30日</span> 至 <span class="month">6月</span><span class="day">3日</span>
+
+        </div>
+        <address title="北京 通州区 宋庄艺术区小堡西街29号">
+          宋庄艺术区小堡西街29号
+        </address>
+        <div>
+          1人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26862528/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/829b1cc1c610277.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26862528/" title="6月4日展映《我只认识你》及主创团队交流，重映《西格雷夫医生》">
+            6月4日展映《我只认识你》及主创团队交流，重映《西格...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">4日 周六</span>&nbsp;<span class="time">18:00 - 21:30</span>
+
+        </div>
+        <address title="北京 东城区 东直门MOMA百老汇电影中心二层图书馆">
+          东直门MOMA百老汇电影中心...
+        </address>
+        <div>
+          33人关注
+        </div>
+      </div>
+      </li>
+  </ul>
+
+
+
+
+
+    </div>
+  </div>
+
+  
+  
+  <div class="mod event-mod">
+    <div class="hd">
+      <h2>
+        <span class="title">
+        讲座
+        </span>
+      </h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/events/week-salon">更多》</a>
+      </span>
+    </div>
+    <div class="bd">
+      
+  
+
+
+
+
+
+  
+  
+
+  <ul class="events-list events-list-2col events-list-pic70">
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26606802/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/e1058346baa5b03.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26606802/" title="北京喜剧沙龙【周一脱口秀创作工作坊】">
+            北京喜剧沙龙【周一脱口秀创作工作坊】
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">4月</span><span class="day">18日</span> 至 <span class="month">6月</span><span class="day">13日</span>
+
+        </div>
+        <address title="北京 北京中粮广场a座b247">
+          北京中粮广场a座b247
+        </address>
+        <div>
+          17人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic hot">
+        <a tabindex="-1" href="https://www.douban.com/event/26716438/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/f2e757ed061b868.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26716438/" title="弘真将||现实中脚踏大地仰望青空！《荀子》互动讲会">
+            弘真将||现实中脚踏大地仰望青空！《荀子》互动讲会
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">22日</span> 至 <span class="month">6月</span><span class="day">11日</span>
+
+        </div>
+        <address title="北京 海淀区 车道沟地铁D口往南200米观澜国际1号楼">
+          车道沟地铁D口往南200米观...
+        </address>
+        <div>
+          32人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26721224/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/d35ee912678299d.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26721224/" title="【奥林浦斯学院】非虚构写作课程：为安静的心灵">
+            【奥林浦斯学院】非虚构写作课程：为安静的心灵
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">21日</span> 至 <span class="month">7月</span><span class="day">2日</span>
+
+        </div>
+        <address title="北京 国贸建外SOHO东区星巴克咖啡馆">
+          国贸建外SOHO东区星巴克咖啡馆
+        </address>
+        <div>
+          79人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26303186/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/ae05ccbfe203823.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26303186/" title="无意义的现代生活——《真思想》西方哲学沙龙">
+            无意义的现代生活——《真思想》西方哲学沙龙
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+    <span class="month">5月</span><span class="day">22日</span> 至 <span class="month">6月</span><span class="day">19日</span>
+
+        </div>
+        <address title="北京 海淀区 五道口 华清嘉园15号楼20层706青年空间">
+          华清嘉园15号楼20层706青年...
+        </address>
+        <div>
+          60人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26853151/">
+          <img alt="" data-lazy="https://img3.doubanio.com/view/event_poster/small/public/ff1515b45a46e6f.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26853151/" title="从柏林戏剧节剧目看当代戏剧创作——“柏林戏剧节”在中国">
+            从柏林戏剧节剧目看当代戏剧创作——“柏林戏剧节”在...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">4日 周六</span>&nbsp;<span class="time">14:00 - 16:00</span>
+
+        </div>
+        <address title="北京 北京市朝阳区酒仙桥路2号798艺术区创意广场">
+          北京市朝阳区酒仙桥路2号79...
+        </address>
+        <div>
+          79人关注
+        </div>
+      </div>
+      </li>
+        <li class="list-entry">
+          <div class="pic">
+        <a tabindex="-1" href="https://www.douban.com/event/26868047/">
+          <img alt="" data-lazy="https://img1.doubanio.com/view/event_poster/small/public/29727df15ed1f4c.jpg" src="https://img3.doubanio.com/f/shire/a1fdee122b95748d81cee426d717c05b5174fe96/pics/blank.gif" width="70">
+        </a>
+      </div>
+      <div class="info">
+        <div class="title">
+          <a href="https://www.douban.com/event/26868047/" title="【当当阅享之旅】六小龄童见面会：苦练七十二变，笑对八十一难">
+            【当当阅享之旅】六小龄童见面会：苦练七十二变，笑对...
+            
+          </a>
+        </div>
+        <div class="datetime">
+          
+      
+      <span class="month">6月</span><span class="day">3日 周五</span>&nbsp;<span class="time">15:00 - 17:00</span>
+
+        </div>
+        <address title="北京 海淀区 西三环北路2号北京外国语大学阿语楼国会厅">
+          西三环北路2号北京外国语大...
+        </address>
+        <div>
+          23人关注
+        </div>
+      </div>
+      </li>
+  </ul>
+
+
+
+
+
+    </div>
+  </div>
+
+
+  </div>
+
+  
+  
+
+        </div>
+        <div class="aside">
+                
+
+  <div id="dale_location_home_top_right"></div>
+
+  <div class="hidden-sm">
+    
+  <div class="mod">
+         
+<a class="bn-big-action" rel="nofollow" href="https://www.douban.com/event/create?loc=beijing">
+  ＋发起同城活动     
+</a>     
+
+
+
+
+  </div>
+
+  </div>
+
+  
+
+
+
+
+<div class="mod event-mod">
+  <div class="hd">
+  <h2>
+    官方预售
+    <span class="pl rr">
+      <a title="北京的全部售票活动" href="https://beijing.douban.com/events/selling">
+        更多》
+      </a>
+    </span>
+  </h2>
+  </div>
+  <ul class="crow simple-list-1col">
+      
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26586266/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="2016板野友美亚洲巡回演唱会—北京站" src="https://img1.doubanio.com/view/event_poster/small/public/d8ef46cf34af498.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26586266/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            2016板野友美亚洲巡回演唱会—北京站
+          </a>
+        </p>
+        <p class="tip">
+          06月11日 20:00-21:30<br>
+          
+          <span class="on-selling-events-price">&yen; 580</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26271251/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="杭州歌剧舞剧院舞剧《遇见大运河》" src="https://img1.doubanio.com/view/event_poster/small/public/765a8a41c95455a.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26271251/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            杭州歌剧舞剧院舞剧《遇见大运河》
+          </a>
+        </p>
+        <p class="tip">
+          06月11日 19:30-21:30 …<br>
+          
+          <span class="on-selling-events-price">&yen; 56</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26374071/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="9折|北京站爱乐汇—“致·爱丽丝”经典浪漫钢琴名曲音乐会" src="https://img3.doubanio.com/view/event_poster/small/public/69c4beb66380b53.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26374071/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            9折|北京站爱乐汇—“致·爱丽丝”经典浪漫钢琴名曲音乐会
+          </a>
+        </p>
+        <p class="tip">
+          05月08日 19:30-21:30 …<br>
+          
+          <span class="on-selling-events-price">&yen; 198</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26551624/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="第二届中国原创话剧邀请展 话剧《前面就是我们的世界》 " src="https://img1.doubanio.com/view/event_poster/small/public/ee0059f82b75767.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26551624/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            第二届中国原创话剧邀请展 话剧《前面就是我们的世界》 
+          </a>
+        </p>
+        <p class="tip">
+          06月09日 ~ 06月12日 每天19:30-21:00<br>
+          
+          <span class="on-selling-events-price">&yen; 48</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26219518/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="【北京站】中国首部浸没式戏剧 孟京辉《死水边的美人鱼》" src="https://img3.doubanio.com/view/event_poster/small/public/03429a54bc75976.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26219518/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            【北京站】中国首部浸没式戏剧 孟京辉《死水边的美人鱼》
+          </a>
+        </p>
+        <p class="tip">
+          06月14日 ~ 07月03日 每周二至周日 19:30-22:00<br>
+          
+          <span class="on-selling-events-price">&yen; 399</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26523364/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="《李雷和韩梅梅》六周年纪念版" src="https://img1.doubanio.com/view/event_poster/small/public/a0fc5ce1eb3fa5b.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26523364/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            《李雷和韩梅梅》六周年纪念版
+          </a>
+        </p>
+        <p class="tip">
+          06月23日 19:30-21:30 …<br>
+          
+          <span class="on-selling-events-price">&yen; 100</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26490817/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="【豆瓣8.6分】百老汇经典原版音乐剧《窈窕淑女》My Fair Lady-北京站" src="https://img3.doubanio.com/view/event_poster/small/public/ecc39e7b2c5bd52.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26490817/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            【豆瓣8.6分】百老汇经典原版音乐剧《窈窕淑女》My Fair Lady-北京站
+          </a>
+        </p>
+        <p class="tip">
+          06月09日 14:30-17:00 …<br>
+          
+          <span class="on-selling-events-price">&yen; 480</span>
+        </p>
+      </div>
+      </li>
+        <li class="col-xs-12 col-sm-6 col-md-12 list-entry">
+      <a class="ll" href="https://www.douban.com/event/26284657/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-img'})"><img alt="当“无厘头”遇上“古典乐”——古典怪咖创意魔幻音乐会" src="https://img1.doubanio.com/view/event_poster/small/public/ac6d83fb3609718.jpg" width="48"></a>
+      <div class="info">
+        <p class="event-title">
+            <a href="https://www.douban.com/event/26284657/?icn=index-shopitem" onclick="moreurl(this, {from:'loc-event-ticket-None-0-title'})">
+            当“无厘头”遇上“古典乐”——古典怪咖创意魔幻音乐会
+          </a>
+        </p>
+        <p class="tip">
+          06月03日 19:30-21:30<br>
+          
+          <span class="on-selling-events-price">&yen; 72</span>
+        </p>
+      </div>
+      </li>
+  </ul>
+</div>
+
+
+
+
+  <div id="dale_location_home_for_thinkpad"></div>
+
+
+  
+
+
+
+
+<div class="mod event-mod">
+  <div class="hd">
+  <h2>
+    品牌活动推广
+  </h2>
+  </div>
+  <ul class="simple-list-1col">
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26865955/">
+        <img alt="【免费抢票】映客2016 BIGBANG MADE [V.I.P] TOUR中国巡演活动" src="https://img3.doubanio.com/view/event_poster/small/public/ce4cf47fdc816b5.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26865955/">
+            【免费抢票】映客2016 BIGBANG MADE [V.I.P] TOUR中国巡演活动
+          </a>
+        </p>
+        <p class="tip">
+          05月30日 ~ 07月21日 每天08:00-23:30<br>
+          <a target="_blank" href="https://site.douban.com/douban-loc/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26822475/">
+        <img alt="【免费抢票】2016北京南锣鼓巷戏剧展演季-现实主义残酷话剧《童年》" src="https://img3.doubanio.com/view/event_poster/small/public/0ffba840c7ccc25.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26822475/">
+            【免费抢票】2016北京南锣鼓巷戏剧展演季-现实主义残酷话剧《童年》
+          </a>
+        </p>
+        <p class="tip">
+          06月28日 周二 19:30-21:00<br>
+          <a target="_blank" href="https://www.douban.com/people/doubanlocation/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26848247/">
+        <img alt="【免费抢票】国家大剧院原创话剧《样式雷》" src="https://img3.doubanio.com/view/event_poster/small/public/2b9721a216f8f40.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26848247/">
+            【免费抢票】国家大剧院原创话剧《样式雷》
+          </a>
+        </p>
+        <p class="tip">
+          06月17日 周五 19:30-21:30<br>
+          <a target="_blank" href="https://site.douban.com/douban-loc/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26848937/">
+        <img alt="【免费抢票】国家大剧院  丹麦皇家芭蕾舞团精品荟萃" src="https://img1.doubanio.com/view/event_poster/small/public/b5683027cabdee8.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26848937/">
+            【免费抢票】国家大剧院  丹麦皇家芭蕾舞团精品荟萃
+          </a>
+        </p>
+        <p class="tip">
+          06月19日 周日 19:30-21:30<br>
+          <a target="_blank" href="https://site.douban.com/douban-loc/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26848633/">
+        <img alt="【免费抢票】国家大剧院管弦乐团：吕嘉与陈萨演绎莫扎特与布鲁克纳" src="https://img3.doubanio.com/view/event_poster/small/public/41c2a7a786ba8a0.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26848633/">
+            【免费抢票】国家大剧院管弦乐团：吕嘉与陈萨演绎莫扎特与布鲁克纳
+          </a>
+        </p>
+        <p class="tip">
+          06月17日 周五 19:30-21:30<br>
+          <a target="_blank" href="https://site.douban.com/douban-loc/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26553773/">
+        <img alt="【免费抢票】《李雷和韩梅梅》六周年纪念版" src="https://img1.doubanio.com/view/event_poster/small/public/8bf4d53c861f2fc.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26553773/">
+            【免费抢票】《李雷和韩梅梅》六周年纪念版
+          </a>
+        </p>
+        <p class="tip">
+          06月29日 周三 19:30-21:30<br>
+          <a target="_blank" href="https://site.douban.com/douban-loc/">豆瓣同城</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26698463/">
+        <img alt="蜗牛的家五周年•蜗牛音乐节" src="https://img3.doubanio.com/view/event_poster/small/public/408ad7ddc75326e.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26698463/">
+            蜗牛的家五周年•蜗牛音乐节
+          </a>
+        </p>
+        <p class="tip">
+          06月25日 周六 15:00-23:00<br>
+          <a target="_blank" href="https://site.douban.com/202906/">蜗牛的家</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26705591/">
+        <img alt="【豆瓣9.2分】2016 北京央华 赖声川作品演出季之 《宝岛一村》" src="https://img3.doubanio.com/view/event_poster/small/public/b729e8fea6c0162.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26705591/">
+            【豆瓣9.2分】2016 北京央华 赖声川作品演出季之 《宝岛一村》
+          </a>
+        </p>
+        <p class="tip">
+          07月08日 周五 19:30-23:00...<br>
+          <a target="_blank" href="https://site.douban.com/273405/">央华时代文化</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26718312/">
+        <img alt="加拿大新马戏时尚秀《大都会 Cirkopolis》加拿大炫光马戏工场" src="https://img3.doubanio.com/view/event_poster/small/public/27ceaf70cc2039d.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26718312/">
+            加拿大新马戏时尚秀《大都会 Cirkopolis》加拿大炫光马戏工场
+          </a>
+        </p>
+        <p class="tip">
+          07月27日 ~ 07月30日 每天19:30-21:00<br>
+          <a target="_blank" href="https://site.douban.com/242738/">保利剧院演出</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26774296/">
+        <img alt=" 【豆瓣9.2分】 百老汇最令人血脉偾张的票房冠军《STOMP·破铜烂铁》" src="https://img3.doubanio.com/view/event_poster/small/public/1e93295fa7592f3.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26774296/">
+             【豆瓣9.2分】 百老汇最令人血脉偾张的票房冠军《STOMP·破铜烂铁》
+          </a>
+        </p>
+        <p class="tip">
+          06月29日 周三 19:30-21:00...<br>
+          <a target="_blank" href="https://site.douban.com/243499/">圆核舞台剧</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26432575/">
+        <img alt="2016第六届林兆华戏剧邀请展——波兰华沙多样剧场话剧《殉道者》" src="https://img1.doubanio.com/view/event_poster/small/public/f1adce0b1b26bdc.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26432575/">
+            2016第六届林兆华戏剧邀请展——波兰华沙多样剧场话剧《殉道者》
+          </a>
+        </p>
+        <p class="tip">
+          06月17日 ~ 06月18日 每天19:30-22:30<br>
+          <a target="_blank" href="https://site.douban.com/lzhstudio/">林兆华戏剧艺术中心</a>
+        </p>
+      </div>
+      </li>
+        
+      <li class="list-entry">
+      <a class="ll" href="https://www.douban.com/event/26432475/">
+        <img alt="2016第六届林兆华邀请展——波兰华沙新剧团话剧《阿波隆尼亚》" src="https://img1.doubanio.com/view/event_poster/small/public/188dcf9be6ed699.jpg" width="48">
+      </a>
+      <div class="info">
+        <p class="event-title">
+          <a href="https://www.douban.com/event/26432475/">
+            2016第六届林兆华邀请展——波兰华沙新剧团话剧《阿波隆尼亚》
+          </a>
+        </p>
+        <p class="tip">
+          06月10日 ~ 06月11日 每天19:30-22:30<br>
+          <a target="_blank" href="https://site.douban.com/lzhstudio/">林兆华戏剧艺术中心</a>
+        </p>
+      </div>
+      </li>
+  </ul>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+  <div class="mod event-mod">
+    <div class="hd">
+    <h2>
+      <span class="pl rr">
+        <a href="https://beijing.douban.com/hosts/active">更多》</a>
+      </span>
+      北京活跃的主办方
+    </h2>
+    </div>
+    
+<ul class="simple-list-1col">
+    <li class="list-entry">
+    <a target="db-host" class="ll" href="https://site.douban.com/kaixinmahua/"><img alt="开心麻花" src="https://img1.doubanio.com/view/site/small/public/8e6eefc38b5f00b.jpg" width="48" height="48"></a>
+    <div class="info">
+      <p class="title"><a target="db-host" href="https://site.douban.com/kaixinmahua/">开心麻花</a></p>
+      <p class="tip">
+      
+      有<a target="db-host" href="https://site.douban.com/kaixinmahua/widget/events/1305913/">16个活动</a>正在进行
+      </p>
+      <ul>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26879451/" title="【北京】开心麻花爆笑舞台剧《李茶的姑妈》">[戏剧] 【北京】开心麻花爆笑舞台剧《李...</a>
+          </li>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26856088/" title="【深圳】开心麻花经典爆笑舞台剧《旋转卡门》 隔年重临">[戏剧] 【深圳】开心麻花经典爆笑舞台剧...</a>
+          </li>
+      </ul>
+    </div>
+    </li>
+    <li class="list-entry">
+    <a target="db-host" class="ll" href="https://site.douban.com/132551/"><img alt="北京人民艺术剧院" src="https://img3.doubanio.com/view/site/small/public/cf12528ed79ce5e.jpg" width="48" height="48"></a>
+    <div class="info">
+      <p class="title"><a target="db-host" href="https://site.douban.com/132551/">北京人民艺术剧院</a></p>
+      <p class="tip">
+      
+      有<a target="db-host" href="https://site.douban.com/132551/widget/events/5617556/">4个活动</a>正在进行
+      </p>
+      <ul>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26848002/" title="话剧：《坏女孩的恶作剧》">[戏剧] 话剧：《坏女孩的恶作剧》</a>
+          </li>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26810286/" title="话剧：《樱桃园》">[戏剧] 话剧：《樱桃园》</a>
+          </li>
+      </ul>
+    </div>
+    </li>
+    <li class="list-entry">
+    <a target="db-host" class="ll" href="https://site.douban.com/chncpa/"><img alt="国家大剧院" src="https://img3.doubanio.com/view/site/small/public/e1eda5553572146.jpg" width="48" height="48"></a>
+    <div class="info">
+      <p class="title"><a target="db-host" href="https://site.douban.com/chncpa/">国家大剧院</a></p>
+      <p class="tip">
+      
+      有<a target="db-host" href="https://site.douban.com/chncpa/widget/events/5748923/">109个活动</a>正在进行
+      </p>
+      <ul>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26862719/" title="绍兴小百花越剧团越剧《屈原》">[戏剧] 绍兴小百花越剧团越剧《屈原》</a>
+          </li>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26862684/" title="中国歌舞剧院原创舞剧《一“義”孤行》">[戏剧] 中国歌舞剧院原创舞剧《一“義”...</a>
+          </li>
+      </ul>
+    </div>
+    </li>
+    <li class="list-entry">
+    <a target="db-host" class="ll" href="https://site.douban.com/bjconcerthall/"><img alt="北京音乐厅" src="https://img1.doubanio.com/view/site/small/public/a02c1738a42d38a.jpg" width="48" height="48"></a>
+    <div class="info">
+      <p class="title"><a target="db-host" href="https://site.douban.com/bjconcerthall/">北京音乐厅</a></p>
+      <p class="tip">
+      
+      有<a target="db-host" href="https://site.douban.com/bjconcerthall/widget/events/1392167/">8个活动</a>正在进行
+      </p>
+      <ul>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26703077/" title="升华之夜——柴亮与埃可森特独奏家组合德奥经典音乐会">[音乐] 升华之夜——柴亮与埃可森特独奏...</a>
+          </li>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26683007/" title="东方气韵——钢琴新秀黎卓宇独奏音乐会">[音乐] 东方气韵——钢琴新秀黎卓宇独奏...</a>
+          </li>
+      </ul>
+    </div>
+    </li>
+    <li class="list-entry">
+    <a target="db-host" class="ll" href="https://site.douban.com/mengjinghui/"><img alt="孟京辉戏剧工作室" src="https://img3.doubanio.com/view/site/small/public/001196ef4b3d756.jpg" width="48" height="48"></a>
+    <div class="info">
+      <p class="title"><a target="db-host" href="https://site.douban.com/mengjinghui/">孟京辉戏剧工作室</a></p>
+      <p class="tip">
+      
+      有<a target="db-host" href="https://site.douban.com/mengjinghui/widget/events/1271601/">20个活动</a>正在进行
+      </p>
+      <ul>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26865113/" title="【北京】中间剧场演出—孟京辉摇滚音乐剧《空中花园谋杀案》">[戏剧] 【北京】中间剧场演出—孟京辉摇...</a>
+          </li>
+          <li>
+          <a class="gloomy" href="https://www.douban.com/event/26767421/" title="孟京辉戏剧，中间剧场演出——《一个无政府主义者的意外死亡》">[戏剧] 孟京辉戏剧，中间剧场演出——《...</a>
+          </li>
+      </ul>
+    </div>
+    </li>
+</ul>
+
+  </div>
+
+
+
+  
+
+  <!-- douban ad begin -->
+  <div id="dale_location_home_bottom_right"></div>
+  <!-- douban ad end -->
+
+  
+
+
+<div class="mod">
+  <h2>更多发现</h2>
+  <ul class="inline-list linkgrid">
+  	<li>
+    <a href="https://beijing.douban.com/groups/" class="no-hover no-visited">
+      <strong>
+      同城活动小组
+      </strong>
+      <span class="info">
+      发现玩活动的圈子
+      </span>
+    </a>
+  	</li>
+  	<li>
+    <a href="https://beijing.douban.com/series" class="no-hover no-visited" style="background-position: 10px -60px">
+      <strong>
+      主办方系列活动
+      </strong>
+      <span class="info">
+      主办方的主题活动
+      </span>
+    </a>
+  	</li>
+  </ul>
+</div>
+
+<!-- douban app begin-->
+
+
+<style>
+    .qrcode-app {
+        margin: 20px 0;
+    }
+    .qrcode-app a.download {
+        display: block;
+        width: 300px;
+        height: 80px;
+        background: url(https://beijing.douban.com/pics/qrcode_app@2x.png) no-repeat;
+        background-size: contain;
+        background-image: -webkit-image-set(url(https://beijing.douban.com/pics/qrcode_app.png) 1x, url(https://beijing.douban.com/pics/qrcode_app@2x.png) 2x);
+        background-image: -moz-image-set(url(https://beijing.douban.com/pics/qrcode_app.png) 1x, url(https://beijing.douban.com/pics/qrcode_app@2x.png) 2x);
+        background-image: -ms-image-set(url(https://beijing.douban.com/pics/qrcode_app.png) 1x, url(https://beijing.douban.com/pics/qrcode_app@2x.png) 2x);
+        background-image: -o-image-set(url(https://beijing.douban.com/pics/qrcode_app.png) 1x, url(https://beijing.douban.com/pics/qrcode_app@2x.png) 2x);
+    }
+</style>
+<div class="qrcode-app">
+    <a class="download" href="https://www.douban.com/doubanapp/app?channel=Db_Homepage_Bar&amp;direct_dl=1" target="_blank">
+    </a>
+</div>
+
+<!-- douban app end -->
+
+<!-- social area begin-->
+<div class="contact mod">
+    <h2>联系我们<a href="mailto:event@douban.com">event@douban.com</a></h2>
+    <ul class="embassy-list clearfix">
+        <li>
+            <a href="https://site.douban.com/location/" target="_blank" class="icon-embassy-site"></a>
+            <a href="https://site.douban.com/location/" target="_blank" class="primary-link">豆瓣小站</a>
+        </li>
+        <li>
+            <a href="http://weibo.com/doubanevent" target="_blank" class="icon-embassy-weibo"></a>
+            <a href="http://weibo.com/doubanevent" target="_blank" class="primary-link">微博</a>
+        </li>
+        <li>
+            <a class="icon-embassy-weixin">
+                <div class="hover"><img class="home-qrcode" src="https://img3.doubanio.com/f/loc/386e82c0c05ed66aa0f8e338f2a7635b49cbc2db/pics/loc/home_qrcode@2x.jpg"></div>
+            </a>
+            <a class="primary-link">微信</a>
+        </li>
+    </ul>
+</div>
+
+<!-- social area end -->
+
+
+
+<div class="mod">
+<p class="pl" style="font-size:14px;">
+<a target="_blank" class="lnk-rss" href="https://www.douban.com/location/beijing/events/feed/weekly">RSS</a>
+&nbsp;
+&nbsp;
+&gt; <a href="https://site.douban.com/apply/host/">申请主办方</a>
+&nbsp;
+&nbsp;
+&gt; <a href="https://help.douban.com/help/ask">我要提建议</a>
+</p>
+</div>
+
+
+
+
+
+
+
+        </div>
+        <div class="extra">
+            
+        </div>
+    </div>
+</div>
+
+      
+  <div id="footer">
+    <div class="hidden-sm">
+      
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=location" target="_blank">帮助中心</a>
+    · <a href="../doubanapp/index.html">移动应用</a>
+    · <a href="../partner/index.html">豆瓣广告</a>
+</span>
+
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/1fdaaacee4dbad7e.js"></script>
+  
+
+  <!-- douban ad begin -->
+  
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'KOZRQivF5T0',
+            criteria = '3:/location/beijing/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_location_home_top_right', 'dale_location_home_for_thinkpad', 'dale_location_beijing_home_left_middle', 'dale_location_home_bottom_right', 'dale_location_beijing_home_left_bottom'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/shire/d580fb2857dc0fad247698afbbd9ed831e411284/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+  <!-- douban ad end -->
+
+  
+    
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+  <!-- dis19-docker-->
+  
+  
+<!-- douban ad begin -->
+<section class="promotion-wechat-overlay">
+    <div class="promotion-wechat-dialog">
+        <h1>链接打不开?</h1>
+        <div>请点击右上角</div>
+        <div>选择<span class="promotion-wechat-highlight">"在浏览器中打开"</span></div>
+        <div class="promotion-wechat-arrow"></div>
+    </div>
+</section>
+
+<div class="promotion-app-banner" id="dale_event_mobile_app_banner"></div>
+
+
+
+
+
+<!-- douban ad end -->
+
+
+  <script>_SPLITTEST=''</script>
+</body>
+
+</html>
+

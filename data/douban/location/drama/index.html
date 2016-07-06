@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="always">
+    <title>豆瓣舞台剧</title>
+    
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  <meta chartset="utf-8">
+  
+
+<meta id="meta-viewport" name="viewport" content="width=1024">
+
+  
+  <script >var _head_start = new Date();</script>
+
+
+  <link href="https://img3.doubanio.com/f/shire/bdb62d45fb145651da30ac3fec98f21c40cfc962/css/douban.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+  
+      
+  </style>
+
+  <script src="https://img3.doubanio.com/f/loc/e9d9543ebc06f2964039a2e94898f84ce77fc070/js/loc/component/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/71ac0453da20ef0d46981120323c692ebfc729b5/js/douban.js"></script>
+  <script type="text/javascript" src="https://img3.doubanio.com/f/shire/29449d396dacb28fd9949c709ccf02a46b910156/js/do.js" data-cfg-autoload="false"></script>
+  <script type="text/javascript">
+    Do.add('dialog', {path: 'https://img3.doubanio.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js', type: 'js', requires: ['https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css']});
+    Do(function() {
+      $.viewport_size=function(){var a=[0,0];if(typeof window.innerWidth!="undefined"){a=[window.innerWidth,window.innerHeight]}else{if(typeof document.documentElement!="undefined"&&typeof document.documentElement.clientWidth!="undefined"&&document.documentElement.clientWidth!=0){a=[document.documentElement.clientWidth,document.documentElement.clientHeight]}else{a=[document.body.clientWidth,document.body.clientHeight]}}return a};Douban.init_collect_btn=function(a){$(a).click(function(g){g.preventDefault();if($("#hiddendialog").length){show_dialog($("#hiddendialog").html());load_event_monitor($("#dialog"));return}show_dialog(null);var d=$(this).attr("name").split("-"),h=d[0],b=d[1],i=d[2],f=d[3],c="/j/location/drama/"+b+"/interest?"+(i?"interest="+i:"")+(f?"&rating="+f:"")+(h=="cbtn"?"&cmt=1":"");$.getJSON(c,function(e){if(!$("#dialog").length){return}var l=$("<div></div>");l.get(0).innerHTML=e.html;var s=e.tags;var o=s.join(" ");$("input[name=tags]",l).val((o.length>1)?o+" ":o);var k={};$.each(s,function(t,r){k[r.toLowerCase()]=true});populate_tag_btns("我的标签:",$("#mytags",l),e.my_tags,k);populate_tag_btns("常用标签:",$("#populartags",l),e.popular_tags,k);if(h=="pbtn"||h=="cbtn"){$("form",l).data("reload",1)}$("#dialog").html(l);$("#showtags").click(function(){if($("#advtags").is(":hidden")){$(this).html("缩起 ▲");$("#advtags").show();$("#foldcollect").val("U")}else{$(this).html($(this).attr("rel"));$("#advtags").hide();$("#foldcollect").val("F")}$(this).blur();refine_dialog()});var j=$("input[name=interest]",l),p=$(".rate_stars"),n=function(){if(j[0].checked){p.hide()}else{p.show()}refine_dialog()};j.click(n);n();if($("#left_n").length){var m=$("#left_n").text();llen=(m.match(/\d+/i)==m)?m:140}if(h=="cbtn"){var q=$("h2","#dialog");q.text(q.text().replace("修改","写短评"));if(!j[0].checked&&j[1]){j[1].checked=true}$("form","#dialog").data("comment",1)}load_event_monitor(l);$.fn.movieDisplayLimit=function(t,w,r){function u(y,z,x){z.text(x-Math.ceil(y.val().replace(/[^\x00-\xff]/g,"**").length/2))}function v(z){var A=z.val().match(/[^\x00-\xff]/ig),x=!A?0:A.length,y=z.val().length-x;t.attr("maxlength",140+Math.ceil(y/2))}u(t,w,r);$(this).keyup(function(){u($(this),w,r);v($(this));return false})};if($("div#dialog form.drama-sns").length){$("textarea#comment").unbind().movieDisplayLimit($("textarea#comment"),$("span#left_n"),140)}});return false})};
+    });
+  </script>
+  
+  
+<link rel="stylesheet" href="https://img3.doubanio.com/f/loc/cc0d305a084af78973a0d1bb5a054e6121ab990c/css/loc/base.css">
+
+  <meta name="keywords" content="舞台剧、话剧、音乐剧、歌剧、剧评、剧情简介、舞台剧照、演出信息"/>
+  <meta name="description" content="话剧、歌舞剧、音乐剧、戏曲等的介绍、剧评和购票服务，查询上演时间和剧院。方便地收藏、评分、评论你看过的剧目，发现你可能感兴趣的好剧。" />
+
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7b8f968f0cb42f68.css">
+  <script></script>
+
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+  <script type="text/javascript">var _body_start = new Date();</script>
+  
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=location" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=location" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">和有趣的人做有趣的事</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 3.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="">
+            <a href="../../index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li class="on">
+            <a href="../index.html" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="../../group/index.html" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">FM</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://market.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">市集</a>
+            </li>
+          
+            <li>
+              <a href="index.html#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="https://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">一拍一</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+<div id="db-nav-location" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-search">
+      <form id="nav-search-form" action="https://www.douban.com/event/search" method="get">
+          
+          <div class="inp">
+            <label for="inp-query">活动名称、地点、介绍、舞台剧</label>
+            <input class="inp-text" id="inp-query" name="search_text" size="22" value="">
+            <input class="inp-btn" type="submit" value="搜索">
+          </div>
+            <input type="hidden" name="loc" value="beijing">
+      </form>
+    </div>
+    <div class="nav-logo">
+      <a title="豆瓣同城-北京" href="../index.html">豆瓣同城-北京</a>
+    </div>
+    <div class="local-label">
+      <a href="../index.html" class="label">北京<i></i></a>
+    </div>
+    
+  
+  <div class="nav-items nav-anon">
+      <ul>
+        
+  
+    
+    <li>
+        <a
+        href="https://beijing.douban.com/events">同城活动</a>
+    </li>
+    
+    <li>
+        <a
+        href="https://beijing.douban.com/hosts">主办方</a>
+    </li>
+    
+    <li>
+        <span>
+        舞台剧
+        </span>
+
+      
+      </ul>
+  </div>
+ 
+  </div>
+  </div>
+</div>
+<div id="db-nav-location-list" class="nav-local-list">
+<ul>
+    <li><a href="https://www.douban.com/location/beijing/">北京</a></li>
+    <li><a href="https://www.douban.com/location/shanghai/">上海</a></li>
+    <li><a href="https://www.douban.com/location/guangzhou/">广州</a></li>
+    <li><a href="https://www.douban.com/location/wuhan/">武汉</a></li>
+    <li><a href="https://www.douban.com/location/chengdu/">成都</a></li>
+    <li><a href="https://www.douban.com/location/shenzhen/">深圳</a></li>
+    <li><a href="https://www.douban.com/location/hangzhou/">杭州</a></li>
+    <li><a href="https://www.douban.com/location/xian/">西安</a></li>
+    <li><a href="https://www.douban.com/location/nanjing/">南京</a></li>
+    <li><a href="https://www.douban.com/location/zhengzhou/">郑州</a></li>
+    <li><a href="https://www.douban.com/location/changsha/">长沙</a></li>
+    <li><a href="https://www.douban.com/location/wenzhou/">温州</a></li>
+    <li><a href="https://www.douban.com/location/fuzhou/">福州</a></li>
+    <li><a href="https://www.douban.com/location/shenyang/">沈阳</a></li>
+    <li><a href="https://www.douban.com/location/world/">更多城市</a></li>
+</ul>
+</div>
+
+
+
+
+
+  
+
+  <div id="wrapper" class="fwrap">
+      
+<div id="content">
+    
+    <div class="grid-free clearfix">
+        
+        
+        <div class="article">
+               
+  
+  
+
+
+
+<div id="db-drama-slides" class="mod ui-slides">
+  <div class="hd">
+    <h2>北京正在上演</h2>
+      
+  <div class="ui-slide-control">
+    <span class="ui-slide-counter pl"></span>
+    <a class="btn-prev" href="javascript:void(0)"></a>
+    <a class="btn-next" href="javascript:void(0)"></a>
+  </div>
+  
+
+  </div>
+  <div class="subject-cards">
+  <div class="ui-slide-screen">
+    <div class="ui-slide-contents" style="width: 1000%;">
+        <div class="ui-slide-frame">
+            
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26794990/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/881e432ef4aea32.jpg" alt="判你有罪 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26794990/">
+          判你有罪
+            
+              <a href="https://www.douban.com/event/26782665/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar00"></span>
+          <span class="rating_num"></span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>楚轶</dd>
+          <dt>编剧：</dt>
+          <dd>穆萌</dd>
+          <dt>主演：</dt>
+          <dd>丛雪如 / 刘倍伯 / 那  骞 / 田  甜</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/event/album/1629046903/" title="帅哥，到我们温泉馆来吧~~">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2356453722.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629046903/" title="摄人魂魄的搞怪女领班——孔美丽">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2356453708.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629046903/" title="《判你有罪》幕后的英雄">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2356453667.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629046903/" title="躲避就是死亡，为了家庭而战。">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2356453623.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629046903/" title="黑夜对于她来说永远都是坟墓——程诚">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2356453598.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26383209/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/be31e94e7fd188d.jpg" alt="大都会 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26383209/">
+          大都会 cirkopolis
+            
+              <a href="https://www.douban.com/event/26718312/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar00"></span>
+          <span class="rating_num"></span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>舞剧</dd>
+          <dt>导演：</dt>
+          <dd>让诺•潘恰德(Jeannot Painchaud)</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/26383209/photos/still/" title="cirkopolis">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2351226443.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26383209/photos/still/" title="cirkopolis">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2351226441.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26383209/photos/still/" title="cirkopolis">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2351226436.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26383209/photos/still/" title="cirkopolis">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2351226433.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26383209/photos/still/" title="cirkopolis">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2351226431.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26800206/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/0a4d71471d9355f.jpg" alt="爱的落幕 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26800206/">
+          爱的落幕
+            
+              <a href="https://www.douban.com/event/26850038/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar00"></span>
+          <span class="rating_num"></span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>帕斯卡尔·朗贝尔</dd>
+          <dt>编剧：</dt>
+          <dd>帕斯卡尔·朗贝尔</dd>
+          <dt>主演：</dt>
+          <dd>奥黛丽·伯纳特 / 斯坦尼斯拉斯·诺德艾</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/event/album/1628912355/" title="活动照片 【PSA演出】爱的落幕">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2352049997.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629650334/" title="活动照片 《爱的落幕》中文版 ——我们在爱中恨，也在恨中爱">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2356063609.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629650334/" title="活动照片 《爱的落幕》中文版 ——我们在爱中恨，也在恨中爱">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2356063576.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629650334/" title="活动照片 《爱的落幕》中文版 ——我们在爱中恨，也在恨中爱">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2356063533.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1629650334/" title="活动照片 《爱的落幕》中文版 ——我们在爱中恨，也在恨中爱">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2356063513.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/20664400/">
+        <img width="150" src="https://img1.doubanio.com/view/drama_subject_poster/median/public/99d6ab4b2083dd9.jpg" alt="人民公敌 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/20664400/">
+          人民公敌 An Enemy of the People
+            
+              <a href="https://www.douban.com/event/26684422/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar35"></span>
+          <span class="rating_num">6.7</span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>Jules Irving / Thomas Ostermeier / 韩清 / 林兆华 / Doug Hughe...</dd>
+          <dt>编剧：</dt>
+          <dd>Henrik Ibsen</dd>
+          <dt>主演：</dt>
+          <dd>Thomas Bading / David Birney / 高亚麟 / Martin Brooks / 邹健 ...</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/20664400/photos/still/" title="《人民公敌》2016首场 胡军、黄志忠分别饰演医生斯多芒克与彼得市长，台上两人争吵被劝">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2354656246.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/20664400/photos/still/" title="《人民公敌》2016首场 黄志忠饰演彼得市长">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2354656148.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/20664400/photos/still/" title="《人民公敌》2016首场 黄志忠饰演彼得市长">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2354656141.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/20664400/photos/still/" title="《人民公敌》2016首场 黄志忠饰演彼得市长">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2354656138.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/20664400/photos/still/" title="《人民公敌》2016首场 胡军、黄志忠分别饰演医生斯多芒克与彼得市长">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2354656130.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26710619/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/c97b2a848129abf.jpg" alt="童年 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26710619/">
+          童年
+            
+              <a href="https://www.douban.com/event/26697889/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar40"></span>
+          <span class="rating_num">7.5</span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>王迪</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/26710619/photos/still/" title="排练照">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2327907626.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26710619/photos/still/" title="排练照">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2327907596.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26710619/photos/still/" title="排练照">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2327907569.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26710619/photos/still/" title="排练照">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2327907547.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26710619/photos/still/" title="排练照">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2327907531.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26701799/">
+        <img width="150" src="https://img1.doubanio.com/view/drama_subject_poster/median/public/e1fa278f26c533c.jpg" alt="影子梦工场 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26701799/">
+          影子梦工场
+            
+              <a href="https://www.douban.com/event/26698897/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar00"></span>
+          <span class="rating_num"></span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>手影剧</dd>
+          <dt>导演：</dt>
+          <dd>杰弗里·阿齐姆</dd>
+          <dt>主演：</dt>
+          <dd>杰弗里·阿齐姆</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/26701799/photos/still/" title="影子梦工场">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2305649388.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26701799/photos/still/" title="影子梦工场">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2305649383.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26701799/photos/still/" title="影子梦工场">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2305649379.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26701799/photos/still/" title="影子梦工场">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2305649375.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/event/album/1628292433/" title="活动照片 【“小不点大视界”北京演出季】 加拿大创意手影剧《影子梦工场》">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2345655621.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/1308955/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/f7dbbfe48aa5cff.jpg" alt="破铜烂铁 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/1308955/">
+          破铜烂铁 Stomp Out Loud
+            
+              <a href="https://www.douban.com/event/26774296/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar50"></span>
+          <span class="rating_num">9.2</span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>舞剧</dd>
+          <dt>导演：</dt>
+          <dd>Steve McNicholas / Luke Cresswell</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/1308955/photos/still/" title="Stomp Out Loud(1308955)">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p1193031673.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/1308955/photos/still/" title="Stomp Out Loud(1308955)">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p1193031541.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/1308955/photos/still/" title="Stomp Out Loud(1308955)">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p1193031447.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/1308955/photos/still/" title="Stomp Out Loud(1308955)">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p1193031364.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/1308955/photos/still/" title="Stomp Out Loud(1308955)">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p1193031224.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/26705615/">
+        <img width="150" src="https://img1.doubanio.com/view/drama_subject_poster/median/public/53e2abc19fede7a.jpg" alt="魔法师的白手套 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/26705615/">
+          魔法师的白手套
+            
+              <a href="https://www.douban.com/event/26656804/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar00"></span>
+          <span class="rating_num"></span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>形体剧</dd>
+          <dt>导演：</dt>
+          <dd>未知</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/26705615/photos/still/" title="魔法师的白手套">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2312387916.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26705615/photos/still/" title="魔法师的白手套">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2312387913.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26705615/photos/still/" title="魔法师的白手套">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2312387909.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26705615/photos/still/" title="魔法师的白手套">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2312387903.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/26705615/photos/still/" title="魔法师的白手套">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2312387900.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/11507832/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/3168c1742b69366.jpg" alt="一个陌生女人的来信 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/11507832/">
+          一个陌生女人的来信
+            
+              <a href="https://www.douban.com/event/26669142/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar40"></span>
+          <span class="rating_num">7.7</span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>李珊 / 孟京辉</dd>
+          <dt>编剧：</dt>
+          <dd>茨威格（原著） / 孟丹枫</dd>
+          <dt>主演：</dt>
+          <dd>白荟 / 黄湘丽</dd>
+      </dl>
+      <ul class="inline-list photos">
+        <li>
+        <a href="https://www.douban.com/location/drama/11507832/photos/still/" title="成都420">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2179928633.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/11507832/photos/still/" title="一个陌生女人的来信">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2054809593.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/11507832/photos/still/" title="一个陌生女人的来信">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2054809573.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/11507832/photos/still/" title="一个陌生女人的来信">
+          <img width="70" height="70" src="https://img1.doubanio.com/view/photo/albumicon/public/p2054809569.jpg" alt="" />
+        </a>
+        </li>
+        <li>
+        <a href="https://www.douban.com/location/drama/11507832/photos/still/" title="一个陌生女人的来信">
+          <img width="70" height="70" src="https://img3.doubanio.com/view/photo/albumicon/public/p2054809553.jpg" alt="" />
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+            </script>
+        </div>
+        <div class="ui-slide-frame">
+            <script class="tmpl" type="text/tmpl">
+              
+  
+  <div class="subject-card">
+    <div class="pic">
+      <a tabindex="-1" href="https://www.douban.com/location/drama/25847309/">
+        <img width="150" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/770f5f20cba26c3.jpg" alt="鱼眼 的封面图片" />
+      </a>
+    </div>
+    <div class="meta">
+      <h3>
+        <a href="https://www.douban.com/location/drama/25847309/">
+          鱼眼
+            
+              <a href="https://www.douban.com/event/26834254/" target="_blank" class="title-badge title-tickets-badge">正在售票</a>
+        </a>
+      </h3>
+      <div class="rating">
+        <span class="bigstar25"></span>
+          <span class="rating_num">5.1</span>
+      </div>
+      <dl>
+        <dt>类型：</dt>
+        <dd>话剧</dd>
+          <dt>导演：</dt>
+          <dd>唐烨</dd>
+          <dt>编剧：</dt>
+          <dd>张民 / 张臻昊 / 王佩</dd>
+          <dt>主演：</dt>
+          <dd>李劲峰 / 蓝盈莹 / 松天硕 / 荆浩 / 黄依依 / 马心怡</dd>
+      </dl>
+    </div>
+  </div>
+
+            </script>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+  <div class="mod">
+  <div class="hd">
+    <h2>最受关注的舞台剧</h2>
+  </div>
+  
+
+<ul class="gallery">
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/1325396/" title="类型: 舞剧
+导演: John McColgan
+编剧: Moya Doherty
+主演: Jean Butler / Maria Pagés / Colin Dunne">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/52295f0da5e9451.jpg" alt="大河之舞" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/1325396/">大河之舞</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/26794990/" title="类型: 话剧
+导演: 楚轶
+编剧: 穆萌
+主演: 丛雪如 / 刘倍伯 / 那  骞 / 田  甜">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/881e432ef4aea32.jpg" alt="判你有罪" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/26794990/">判你有罪</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/23176186/" title="类型: 话剧
+导演: 梁志民
+编剧: 梁志民
+主演: 吕曼茵 / 馮翊綱 / 叶子彦 / 柯叔元 / 陈幼芳 / 李明澤 / 王有輝 / 蔡燦得 / 黃邵華 / 劉亞雲 / 葉子彥 / 蔡灿得 / 王友輝 / 賀四英 / 王書宏 / 鄭志偉 / 李沛旭 / 張有財 / 張惠卿 / 劉令儀 / 張雨生 / 黎靜宜 / 陳祥純 / 蔡榮祖 / 王友辉 / 戴秀娟 / 胡康星 / 洪慧貞 / 劉崇仁 / 郝寬榮 / 李右杭 / 趙靖夏 / 呂曼茵 / 朱文宇 / 吳皇儀 / 李依璇 / 曹启泰 / 舒宗浩 / 劉湘湘 / 姜柏任 / 顏嘉樂 / 陳子彥 / 蔡琴 / 张仰瑄 / 黄滢蓁 / 歐俊 / 余大任 / 林靈玉 / 陳幼芳 / 溫懷智 / 陶大偉 / 舒友">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/862d6a8333beeb6.jpg" alt="淡水小镇" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/23176186/">淡水小镇</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/26793045/" title="类型: 话剧
+导演: 萧寄谷
+编剧: 萧寄谷
+主演: 李五八 / 史雨然 / 张哈哈 / 赵大全 / 李英珲(韩) / 林二木">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/a3352e9486c7071.jpg" alt="无匹骄阳" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/26793045/">无匹骄阳</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/25839944/" title="类型: 话剧
+导演: 孟京辉
+编剧: 贝兰特·罗素
+主演: 丁博轩 / 关笑天 / 丁一滕">
+      <img width="110" height="160" src="https://img1.doubanio.com/view/drama_subject_poster/median/public/6f6c487ee6c27c9.jpg" alt="寻欢作乐" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/25839944/">寻欢作乐</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/20394194/" title="类型: 话剧
+导演: 陈佩斯
+编剧: 陈佩斯
+主演: 王晶 / 骆佳 / 朱军 / 秦焰 / 陈佩斯 / 刘军">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/7651eb703edeb9e.jpg" alt="托儿" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/20394194/">托儿</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/1765426/" title="类型: 音乐剧
+导演: Gilles Maheu / Gilles Amado
+编剧: Luc Plamondon / Victor Hugo
+主演: Hélène Ségara / Daniel Lavoie / Patrick Fiori / Robert Marien / Luck Mervil / Alessandra Ferrari / Yvan Pedneault / Matt Laurent / Richard Charest / Ian Carlyle / Julie Zenatti / Elica MacKenzie / Bruno Pelletier / Garou">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/5d276cf0febff56.jpg" alt="巴黎圣母院" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/1765426/">巴黎圣母院</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/10863859/" title="类型: 话剧
+导演: 孟京辉
+编剧: 余华
+主演: 黄渤 / 袁泉">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/7d9b605f4017e3f.jpg" alt="活着" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/10863859/">活着</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/20274069/" title="类型: 话剧
+导演: Jessica Dick / Sion Humphreys / Claudia Stavisky / Lluís Pasqual / Tracie Pang / Bo Petersen / Rene Maurin / Tamiya Kuriyama / Dennis Začek / Tony Wernham / David Mealor / Jiří Pokorný / Téo Spychalski / Joe Mantello
+编剧: David Harrower
+主演: Michelle Williams / Rebecca Vachon / Jeff Daniels / Emma Yong / Terence Crawford / Philomène Bilodeau / Baylor Shull / Allison Wilde / Massimo Popolizio / Silvia Altrui / Iva Babič / Deborah Vieyra / Lucija Tratnik / Mattie Hawkinson / Gabriel Arcand / Matt Tully / Ksenja Logos / Rebekah Nathan and Lucy Giffard / Léa Drucker / Jana Pidrmanová / Ayumi Ito / Warrick Grier / Bryn Fôn / William Petersen / Lauren Delfs / Marie-Eve Pelletier / Anna Della Rosa / Daniel Jenkins / Rebecca Sumner Smith / Maurice Bénichou / Helena Němcová / Jiří Štěpnička / Scarlett Groom-Ransom / Masaaki Uchino / Sasha Briggs / Steven Moskos / Fflur Medi Owen / Janez Starina">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/921208056f61331.jpg" alt="黑鸟" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/20274069/">黑鸟</a>
+  </div>
+  </li>
+    
+  <li>
+  <div class="pic">
+    <a href="https://www.douban.com/location/drama/10944466/" title="类型: 歌剧
+导演: Henning Brockhous / 【复排】Harry Fehr / Derek Bailey / Richard Eyre / 莉莉安娜·卡瓦尼 / Mario Lanfranchi / 李丹丹 / Willy Decker / 【原导】Richard Eyre / 科桑·奥士柏德 / Francesca Zambello / Alexander Titel / Pier Luigi Pizzi / 未知 / 海宁•布罗克豪斯 / Evgeni Sokovkin
+编剧: 皮亚威 / Francesco Maria Piave / 【指挥】Daniel Oren
+主演: 阿图罗•查康-克鲁斯 / Nikolai Kazansky / 圣卡洛歌剧院乐团及合唱团 / 玛丽•邓立维 / Francesca Franci / Andrei Baturkin / Celso Albelo / Alexey Bogdanchikov / Khibra Gerzmava / Gino Bechi / Chingis Ayusheev / Petr Migunov / Roderick Earle / Ionut Pascu / 丁毅 / Mark Beesley / Irina Udalova / Salvatore Cordella / Frank Lopardo / Helene Schneiderman / Alexei Dolgov / Tiziana Fabbricini / Leo Nucci / Carlo Rizzi / Roberto Alagna / Carlo Striuli / Boris Bobkov / Natasha Verniol / Francesco Pittari / Lana Kos / Vincenzo Costanzo / Pavel Lisitsian / Giorgio Zancanaro / 西门·皮亚苏拉 / 朱塞佩娜·布列德莉 / Vasily Ladyuk / Rolando Villanzo / Elizaveta Shumskaya / Robin Leggate / 爱狄塔·格鲁贝罗娃 / 卡门·吉安娜塔斯奥 / Ksenia Vyaznikova / Venera Gimandieva / Olga Insarova / Anna Moffo / 王传越 / 廖昌永 / Maria Agresta / 朱塞佩·吉帕丽 / Franco Bonisolli / Gillian Knight / Sergei Lemeshev / Neil Shicoff / Vasily Efimov / Thomas Hampson / 张立萍 / Angela Cheorghiu / Leah-Marian Jones / Anna Netrebko / Paolo Coni / Richard van Allan">
+      <img width="110" height="160" src="https://img3.doubanio.com/view/drama_subject_poster/median/public/92f1400542b145f.jpg" alt="茶花女" />
+    </a>
+  </div>
+  <div class="title">
+    <a tabindex="-1" href="https://www.douban.com/location/drama/10944466/">茶花女</a>
+  </div>
+  </li>
+</ul>
+
+
+</div>
+
+  
+
+<div class="mod">
+  <h2>
+    近期热门剧评
+    <span class="pl">
+      &nbsp;
+      <a href="https://www.douban.com/location/drama/review/best" title="更多舞台剧评论">更多剧评&raquo;</a>
+    </span>
+  </h2>
+  
+  
+    
+  
+  <div class="review ">
+      <div class="review-hd">
+        <a tabindex="-1" href="https://www.douban.com/location/drama/26637524/"><img src="https://img3.doubanio.com/view/drama_subject_poster/small/public/e734c78a225cbb5.jpg" alt="你好，忧愁" /></a>
+      </div>
+      <div class="review-bd">
+        <h3><a title="桃子所写的话剧《你好，忧愁》的剧评" href="https://www.douban.com/location/drama/review/7870481/">比陌生女人差了很多啊…………</a></h3>
+          <div class="review-meta">
+            <a class="mimic" href="https://www.douban.com/location/people/55464670/">桃子</a> 评论<a class="mimic" href="https://www.douban.com/location/drama/26637524/">《你好，忧愁》</a>
+              <span class="allstar20"></span>
+          </div>
+          <div class="review-content">孟京辉也太随便了……舞台、服装、布景，感觉没有哪一样是认真思考选择过的。这个形象和陌生女人小时候比又有什么不一样？啊还是有，就是完全不讨人喜欢……加的很多元素都不痛不痒乏味无聊，每把话筒拿起来一起就让人产生强烈不适感……睡了一觉以后还是... <a href="https://www.douban.com/location/drama/review/7870481/">(全文)</a> </div>
+      </div>
+  </div>
+
+    
+  
+  <div class="review ">
+      <div class="review-hd">
+        <a tabindex="-1" href="https://www.douban.com/location/drama/11627619/"><img src="https://img1.doubanio.com/view/drama_subject_poster/small/public/3b72cb374ddebcb.jpg" alt="傅山进京" /></a>
+      </div>
+      <div class="review-bd">
+        <h3><a title="wenwen所写的晋剧《傅山进京》的剧评" href="https://www.douban.com/location/drama/review/7863270/">相爱相杀男人戏</a></h3>
+          <div class="review-meta">
+            <a class="mimic" href="https://www.douban.com/location/people/hujiapapa/">wenwen</a> 评论<a class="mimic" href="https://www.douban.com/location/drama/11627619/">《傅山进京》</a>
+              <span class="allstar50"></span>
+          </div>
+          <div class="review-content">《傅山进京》这个戏已经被各路名家从各种角度评论过了，珠玉在前，作为一只小虾米，我不敢造次，只是简单写写我的观后感。
+
+在看完戏的激动平静后，仔细想想，这戏竟然没有女主角——存在感最高的女性角色应该是傅山娘子的灵魂——所以这是妥妥的纯男人... <a href="https://www.douban.com/location/drama/review/7863270/">(全文)</a> </div>
+      </div>
+  </div>
+
+    
+  
+  <div class="review ">
+      <div class="review-hd">
+        <a tabindex="-1" href="https://www.douban.com/location/drama/26747660/"><img src="https://img3.doubanio.com/view/drama_subject_poster/small/public/6b2a7b941ce5ca4.jpg" alt="大先生" /></a>
+      </div>
+      <div class="review-bd">
+        <h3><a title="无费吾豆所写的话剧《大先生》的剧评" href="https://www.douban.com/location/drama/review/7861478/">陈旧的痛苦及其无效的形式  （ 《文学报》，2016年4月21日）</a></h3>
+          <div class="review-meta">
+            <a class="mimic" href="https://www.douban.com/location/people/1310898/">无费吾豆</a> 评论<a class="mimic" href="https://www.douban.com/location/drama/26747660/">《大先生》</a>
+              <span class="allstar20"></span>
+          </div>
+          <div class="review-content">前几天去中国国家话剧院看了《大先生》第二次公演，据说首演时来了许多戏剧家和鲁迅研究专家，一致给予好评。已出版的剧本上印着当代颇有“青年导师”气息的陈丹青的推荐语，演出单上有鲁学家孙郁的评介，加之剧本在前两年获得“老舍文学奖”，导演又是一... <a href="https://www.douban.com/location/drama/review/7861478/">(全文)</a> </div>
+      </div>
+  </div>
+
+    
+  
+  <div class="review ">
+      <div class="review-hd">
+        <a tabindex="-1" href="https://www.douban.com/location/drama/26740824/"><img src="https://img3.doubanio.com/view/drama_subject_poster/small/public/cd757998ac53ad3.jpg" alt="他有两把左轮手枪和黑白相间的眼睛" /></a>
+      </div>
+      <div class="review-bd">
+        <h3><a title="94olive所写的话剧《他有两把左轮手枪和黑白相间的眼睛》的剧评" href="https://www.douban.com/location/drama/review/7857365/">先锋的精神与先锋的装潢</a></h3>
+          <div class="review-meta">
+            <a class="mimic" href="https://www.douban.com/location/people/2259285/">94olive</a> 评论<a class="mimic" href="https://www.douban.com/location/drama/26740824/">《他有两把左轮手枪和黑白相间的眼睛》</a>
+              <span class="allstar30"></span>
+          </div>
+          <div class="review-content">《他有两把左轮手枪和黑白相间的眼睛》是孟京辉2016年的新戏，与孟京辉的成名作《一个无政府主义者的意外死亡》一样，都是改编自意大利剧作家达里奥•福的作品。达里奥•福对孟京辉影响颇深，达里奥•福戏剧中的即兴表演、载歌载舞等手法也被孟京辉... <a href="https://www.douban.com/location/drama/review/7857365/">(全文)</a> </div>
+      </div>
+  </div>
+
+  
+
+</div>
+
+
+
+
+
+
+        </div>
+        <div class="aside">
+                
+  <div id="dale_location_home_top_right"></div>
+  
+  <div class="mod">
+  <h2>在北京的剧场</h2>
+  <ol class="simple-list-1col chart-list">
+  
+    
+    <li class="list-entry">
+      <div class="title">
+        <a href="https://site.douban.com/mako/">
+          麻雀瓦舍
+        </a>
+      </div>
+      <p class="tip">
+        19546人喜欢
+      </p>
+    </li>
+    
+    <li class="list-entry">
+      <div class="title">
+        <a href="https://site.douban.com/trojanhouse/">
+          木马剧场
+        </a>
+      </div>
+      <p class="tip">
+        4262人喜欢
+      </p>
+    </li>
+    
+    <li class="list-entry">
+      <div class="title">
+        <a href="https://site.douban.com/fcchbj/">
+          北京中山公园音乐堂
+        </a>
+      </div>
+      <p class="tip">
+        2942人喜欢
+      </p>
+    </li>
+    
+    <li class="list-entry">
+      <div class="title">
+        <a href="https://site.douban.com/bjconcerthall/">
+          北京音乐厅
+        </a>
+      </div>
+      <p class="tip">
+        1641人喜欢
+      </p>
+    </li>
+    
+    <li class="list-entry">
+      <div class="title">
+        <a href="https://site.douban.com/205522/">
+          中间剧场/影院
+        </a>
+      </div>
+      <p class="tip">
+        495人喜欢
+      </p>
+    </li>
+  </ol>
+</div>
+
+  
+
+<div class="mod">
+  <h2>最新短评</h2>
+  
+  
+  <ul class="inline-list simple-list-1col collectors">
+      
+      
+      
+      <li>
+      <a class="ll" tabindex="-1" href="https://www.douban.com/location/people/Marilyn350/drama/">
+        <img width="48" height="48" src="https://img3.doubanio.com/icon/u1791317-66.jpg" alt="彳彳_亍亍" />
+      </a>
+      <div class="info">
+        <p class="title">
+          <a href="https://www.douban.com/location/people/Marilyn350/drama/">彳彳_亍亍</a>
+        </p>
+        <p class="tip">
+          <a class="mimic" href="https://www.douban.com/location/drama/26757975/comments#c-1047611869">41分钟前</a>评论 <a class="mimic"
+            title="话剧《福尔摩斯之死》的演职人员信息、剧照、剧情简介、剧评" href="https://www.douban.com/location/drama/26757975/">福尔摩斯之死</a>
+            <span class="stars stars4"></span>
+        </p>
+          <p class="comment">开头略沉闷，结尾太仓促。然而我还是很久没在剧场感到那么放松了。和观众的互动是加分项，原来大家都那么污。（围笑）</p>
+      </div>
+      </li>
+      
+      
+      
+      <li>
+      <a class="ll" tabindex="-1" href="https://www.douban.com/location/people/MeredithGray/drama/">
+        <img width="48" height="48" src="https://img3.doubanio.com/icon/u66118919-15.jpg" alt="文艺半吊子" />
+      </a>
+      <div class="info">
+        <p class="title">
+          <a href="https://www.douban.com/location/people/MeredithGray/drama/">文艺半吊子</a>
+        </p>
+        <p class="tip">
+          <a class="mimic" href="https://www.douban.com/location/drama/11527736/comments#c-1047608316">1小时前</a>评论 <a class="mimic"
+            title="话剧《无人生还》的演职人员信息、剧照、剧情简介、剧评" href="https://www.douban.com/location/drama/11527736/">无人生还</a>
+        </p>
+          <p class="comment">真。。。地。。。好。。。看。。。只想说幸亏是最后改编了一下结局，否则，连觉都睡不着了。。。</p>
+      </div>
+      </li>
+      
+      
+      
+      <li>
+      <a class="ll" tabindex="-1" href="https://www.douban.com/location/people/81828231/drama/">
+        <img width="48" height="48" src="https://img3.doubanio.com/icon/u81828231-6.jpg" alt="瓦使贝尔" />
+      </a>
+      <div class="info">
+        <p class="title">
+          <a href="https://www.douban.com/location/people/81828231/drama/">瓦使贝尔</a>
+        </p>
+        <p class="tip">
+          <a class="mimic" href="https://www.douban.com/location/drama/10944553/comments#c-1047605954">1小时前</a>评论 <a class="mimic"
+            title="音乐剧《一笼傻鸟》的演职人员信息、剧照、剧情简介、剧评" href="https://www.douban.com/location/drama/10944553/">一笼傻鸟</a>
+            <span class="stars stars4"></span>
+        </p>
+          <p class="comment">位置非常棒，看得清每个演员的脸上的表情！非常棒！好多梗好污，演员还会调戏观众2333！作为一个一踩有跟鞋子就容易崴脚的人非常佩服那些穿着高跟...</p>
+      </div>
+      </li>
+      
+      
+      
+      <li>
+      <a class="ll" tabindex="-1" href="https://www.douban.com/location/people/brennteiskalt/drama/">
+        <img width="48" height="48" src="https://img3.doubanio.com/icon/u34981241-6.jpg" alt="brennteiskalt" />
+      </a>
+      <div class="info">
+        <p class="title">
+          <a href="https://www.douban.com/location/people/brennteiskalt/drama/">brennteiskalt</a>
+        </p>
+        <p class="tip">
+          <a class="mimic" href="https://www.douban.com/location/drama/23008966/comments#c-1047599342">今天凌晨</a>评论 <a class="mimic"
+            title="歌剧《Rise and Fall of the City of Mahagonny》的演职人员信息、剧照、剧情简介、剧评" href="https://www.douban.com/location/drama/23008966/">Rise and Fall of the City of Mahagonny</a>
+            <span class="stars stars5"></span>
+        </p>
+          <p class="comment">自从发现了Kurt Weill，我简直分分钟变粉。如果住的附近有《马哈哥尼城》的歌剧/音乐剧制作，强烈建议买票进场。所住的德国地区剧院制作简直是magi...</p>
+      </div>
+      </li>
+  </ul>
+
+</div>
+
+
+
+  
+<div class="mod">
+  <h2>热门舞台剧小组</h2>
+  <div class="indent obssin">
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/tayao/"><img src="https://img3.doubanio.com/icon/g312589-15.jpg" alt="踏谣戏剧学馆" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/tayao/">踏谣戏剧学馆</a>
+          <span>(688)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/studio/"><img src="https://img3.doubanio.com/icon/g18373-2.jpg" alt="802戏剧工作室" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/studio/">802戏剧工作室</a>
+          <span>(1160)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/50297/"><img src="https://img3.doubanio.com/icon/g50297-4.jpg" alt="北京人艺" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/50297/">北京人艺</a>
+          <span>(7284)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/acting/"><img src="https://img3.doubanio.com/icon/g125588-2.jpg" alt="戏剧&amp;影视表演" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/acting/">戏剧&amp;影视表演</a>
+          <span>(4312)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/Moderndrama/"><img src="https://img3.doubanio.com/icon/g17725-1.jpg" alt="先锋话剧情结" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/Moderndrama/">先锋话剧情结</a>
+          <span>(2884)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/xiju/"><img src="https://img3.doubanio.com/icon/g13266-26.jpg" alt="南派喜剧" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/xiju/">南派喜剧</a>
+          <span>(27045)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/mengjinghui/"><img src="https://img3.doubanio.com/icon/g105768-1.jpg" alt="孟京辉戏剧工作室" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/mengjinghui/">孟京辉戏剧工作室</a>
+          <span>(8653)</span>
+        </dd>
+      </dl>
+      
+      <dl class="ob">
+        <dt>
+        <a tabindex="-1" href="https://www.douban.com/group/fenghuajushe/"><img src="https://img3.doubanio.com/icon/g289523-2.jpg" alt="风华剧社" /></a>
+        </dt>
+        <dd>
+        <a href="https://www.douban.com/group/fenghuajushe/">风华剧社</a>
+          <span>(505)</span>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+
+        </div>
+        <div class="extra">
+            
+    <!-- douban ad begin -->
+    <div id="dale_location_drama_bottom_banner"></div>
+    <!-- douban ad end -->
+
+        </div>
+    </div>
+</div>
+
+      
+  <div id="footer">
+    <div class="hidden-sm">
+      
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=location" target="_blank">帮助中心</a>
+    · <a href="../../doubanapp/index.html">移动应用</a>
+    · <a href="../../partner/index.html">豆瓣广告</a>
+</span>
+
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/20a8db8ad5fa492e.js"></script>
+  
+  <!-- douban ad begin -->
+  
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'KOZRQivF5T0',
+            criteria = '3:/location/drama/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_location_home_top_right', 'dale_location_drama_bottom_banner'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/shire/d580fb2857dc0fad247698afbbd9ed831e411284/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+  <!-- douban ad end -->
+
+  
+    
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+  <!-- dis17-docker-->
+  
+  
+<!-- douban ad begin -->
+<section class="promotion-wechat-overlay">
+    <div class="promotion-wechat-dialog">
+        <h1>链接打不开?</h1>
+        <div>请点击右上角</div>
+        <div>选择<span class="promotion-wechat-highlight">"在浏览器中打开"</span></div>
+        <div class="promotion-wechat-arrow"></div>
+    </div>
+</section>
+
+<div class="promotion-app-banner" id="dale_event_mobile_app_banner"></div>
+
+
+
+
+
+<!-- douban ad end -->
+
+
+  <script>_SPLITTEST=''</script>
+</body>
+
+</html>
+
